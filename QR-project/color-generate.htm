@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>QR Ease</title>
+</head>
+<body>
+    <header class="d-flex justify-content-between  pt-4 create-header">
+        <div class="ps-4"><i class="fa-solid fa-bars" style="color:rgb(250, 249, 249)" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop"></i>
+
+
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+            id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+         
+        </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+            aria-labelledby="offcanvasWithBackdropLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="border">
+                <p><i class="fa-solid fa-house"></i><a href="index.html"> Home</a></p>
+                <p><i class="fa-solid fa-box-archive"></i><a href="">Archive</a> </p>
+                <p><i class="fa-solid fa-qrcode"></i><a href="createQR.htm">Dash Board</a> </i></p>
+                <p><i class="fa-solid fa-gear"></i></i><a href="accout-settings.htm">Settings</a></i> </p>
+                <p><i class="fa-solid fa-circle-question"></i><a href="">Help</a> </p>
+                </div>
+              <div class="border py-3">  <i class="fa-solid fa-folder-open"></i> <a href="">Untitled</a> 
+                
+            
+            
+                <button class="mb-2 mx-4 w-lg-50 w-75 p-1 mt-3"><i class="fa-solid fa-plus" style="color: white;" ></i> New Folder</button></div>
+                <button class="mt-4 w-lg-50 w-75 p-1 mx-4"><i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+            </div></div>
+        </div>
+      
+
+           </div>
+        <div>
+            <div class="d-flex gap-4 me-4">
+                <p>Welcome </p>
+                <p>xyz@xyz.com</p>
+            </div>
+        </div>
+    </header>
+
+<div class="d-flex flex-column flex-lg-row gap-5">
+    <div class="my-5 mx-3 d-flex align-items-center round0 py-3 pe-1 px-3  ">
+        <div class="round1">
+        <div class="gray-circle"></div>
+        <div class="white-circle"></div>
+        <div class="small-triangle"></div>
+        <img src="assets/img/finger.svg" alt="">
+    </div>
+    <p class="px-3">Choose Type</p>
+    </div>
+    <div class="my-5 mx-3 d-flex align-items-center round0 py-3 pe-1 px-3">
+        <div class="round1">
+        <div class="gray-circle"></div>
+        <div class="white-circle"></div>
+        <div class="small-triangle"></div>
+        <img src="assets/img/note3.svg" alt="">
+    </div>
+    <p class="px-3">Additional 
+        Information</p>
+    </div>
+    <div class="my-5 mx-3 d-flex align-items-center round0 py-3 pe-1 px-3">
+        <div class="round1">
+        <div class="gray-circle"></div>
+        <div class="white-circle"></div>
+        <div class="small-triangle"></div>
+        <img src="assets/img/paint2.svg" alt="">
+    </div>
+    <p class="px-3">Color &
+        Shape</p>
+    </div>
+    <div class="my-5 mx-3 d-flex align-items-center round0 py-3 pe-4 px-3 ">
+        <div class="round1">
+        <div class="gray-circle"></div>
+        <div class="white-circle"></div>
+        <div class="small-triangle"></div>
+        <img src="assets/img/qr3.svg" alt="">
+    </div>
+    <p class="ps-3">Download 
+        QR Code</p>
+    </div>
+</div>
+<div class="d-flex flex-column flex-lg-row  mx-lg-5 mx-2 mb-5">
+    <div class="generateQR-left d-flex gap-3  ">
+<div>
+    <p > Color </p>
+    <p>Shapes </p>
+    <p>Logo </p>
+    <p>Frame </p>
+    
+
+</div>
+<div class="form ">
+    <form action="">
+        <label for="bgc" class="" >Background Color</label>
+        <div class="d-flex gap-3">
+            <input type="text" id="bgc" placeholder="#000000"> <input type="color" value="#ff0000">
+        </div>
+        <label for="bgc"  class="mt-2">Dots Color</label>
+        <div class="d-flex gap-3">
+            <input type="text" id="bgc" placeholder="#000000"> <input type="color" value="#ff0000">
+        </div>
+        <label for="bgc"  class="mt-2" >Marker Border Color</label>
+        <div class="d-flex gap-3">
+            <input type="text" id="bgc" placeholder="#000000"> <input type="color" value="#ff0000">
+        </div>
+        <label for="bgc"  class="mt-2" >Marker Center color</label>
+        <div class="d-flex gap-3">
+            <input type="text" id="bgc" placeholder="#000000"> <input type="color" value="#ff0000">
+        </div>
+        
+    </form>
+</div>
+</div>
+    
+    <div class="generateQR-right d-flex flex-column mt-3 mt-lg-0">
+        <img src="assets/img/Rectangle 109.svg" alt="">
+        <button class=" mb-3">Generate QR Code</button>
+    </div>
+</div>
+
+
+
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/bootstrap/js/jquery.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

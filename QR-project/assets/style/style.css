@@ -1,0 +1,1341 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Magra&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box !important;
+}
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+}
+a{
+text-decoration: none;
+color: inherit;}
+.heading {
+  font-family: "Jost", sans-serif;
+}
+.hamburger {
+  cursor: pointer;
+}
+.hamburger:hover i {
+  color: #000 !important;
+}
+.offcanvas-body i {
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+.offcanvas:focus-within i {
+  color: grey !important;
+}
+
+.offcanvas-body a {
+  text-decoration: none;
+  color: gray;
+  font-size: 18px;
+  font-weight: 700;
+}
+.offcanvas-body p:hover a,
+.offcanvas-body p:hover i {
+  color: rgb(255, 253, 253) !important ;
+}
+
+.offcanvas-body p {
+  padding: 10px;
+  margin-right: 80px;
+  border-radius: 0 40px 40px 0;
+
+  /* margin-top: 25px; */
+  transition: 0.3s ease;
+}
+.offcanvas-body p:hover {
+  color: #fff;
+  background-color: #016b8c;
+}
+.hamburger i {
+  font-size: 1.5rem;
+}
+.title ul {
+  list-style-type: none;
+}
+.title li a {
+  text-decoration: none;
+  color: #000;
+}
+.title li {
+  margin: 0 2rem;
+}
+hr {
+  border: 1.5px solid gray;
+}
+.row {
+  --bs-gutter-x: 0rem !important;
+}
+
+table {
+  border-collapse: collapse;
+  width: 75%;
+}
+
+table tr {
+  border-bottom: 1px solid black;
+}
+table tr:last-child {
+  border-bottom: none;
+}
+tr p {
+  font-size: 0.6rem;
+  margin-bottom: 0 !important;
+}
+td {
+  width: 40px;
+}
+td img {
+  text-align: center;
+  width: 30px;
+  height: 50px;
+}
+table td {
+  text-align: center;
+  padding: 5px 15px 8px 10px;
+
+  border-right: 1px solid black;
+}
+table td:last-child {
+  border-right: none;
+}
+input[type="file"] {
+  display: none;
+}
+.upload-file {
+  cursor: pointer;
+}
+.content {
+  background-color: #f2f2f2;
+}
+.content input {
+  width: 100%;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.QR img {
+  padding: 10px;
+  border: 4px solid rgba(0, 0, 0, 0.13);
+}
+.selection select {
+  padding: 5px 10px;
+  box-shadow: -4px 4px 8px rgba(230, 230, 230, 0.2),
+    4px -4px 8px rgba(230, 230, 230, 0.2),
+    -4px -4px 8px rgba(255, 255, 255, 0.9),
+    4px 4px 10px rgba(230, 230, 230, 0.9),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.3),
+    inset -1px -1px 2px rgba(230, 230, 230, 0.5);
+  border-radius: 3px;
+  border: none;
+}
+.selection select:first-child {
+  background: #016b8c;
+  color: #fff;
+}
+.pdfQR button {
+  background-color: #016b8c;
+  color: white;
+  padding: 2px 40px;
+  border: none;
+}
+.white-cloud {
+  text-decoration: none;
+  color: white;
+  background-color: #016b8c;
+  padding: 10px;
+  border-radius: 4px;
+}
+.black-cloud {
+  text-decoration: none;
+  background: #ffffff;
+  box-shadow: -5px 5px 10px rgba(224, 224, 224, 0.2),
+    5px -5px 10px rgba(224, 224, 224, 0.2),
+    -5px -5px 10px rgba(255, 255, 255, 0.9),
+    5px 5px 13px rgba(224, 224, 224, 0.9),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.3),
+    inset -1px -1px 2px rgba(224, 224, 224, 0.5);
+  border-radius: 4px;
+  padding: 10px;
+}
+.pdf-card {
+  position: relative;
+  gap: 60px;
+  font-size: 13px;
+}
+.selection {
+  margin-right: 150px !important;
+}
+.vertical {
+  height: 600px;
+  border-left: 3px solid rgba(128, 128, 128, 0.486);
+}
+.vertical1 {
+  height: 300px;
+  border-left: 3px solid rgba(128, 128, 128, 0.486);
+}
+.card1 {
+  width: 300px;
+  padding-right: 90px !important;
+  padding: 10px 30px;
+  background-color: #fff;
+  box-shadow: -13px 13px 26px rgba(201, 201, 201, 0.2),
+    13px -13px 26px rgba(201, 201, 201, 0.2),
+    -13px -13px 26px rgba(255, 255, 255, 0.9),
+    13px 13px 33px rgba(201, 201, 201, 0.9),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.3),
+    inset -1px -1px 2px rgba(201, 201, 201, 0.5);
+  z-index: -1;
+}
+.card3 {
+  width: 300px;
+  padding-right: 90px !important;
+  background-color: #fff;
+  padding: 10px 30px;
+  box-shadow: -13px 13px 26px rgba(186, 186, 186, 0.2),
+    13px -13px 26px rgba(186, 186, 186, 0.2),
+    -13px -13px 26px rgba(255, 255, 255, 0.9),
+    13px 13px 33px rgba(186, 186, 186, 0.9),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.3),
+    inset -1px -1px 2px rgba(186, 186, 186, 0.5);
+  z-index: -1;
+}
+.card2 {
+  width: 300px;
+  padding-right: 90px !important;
+  padding: 10px 30px;
+  background-color: #fff;
+  position: absolute;
+
+  left: -5%;
+  top: 30%;
+  box-shadow: -13px 13px 26px rgba(186, 186, 186, 0.2),
+    13px -13px 26px rgba(186, 186, 186, 0.2),
+    -13px -13px 26px rgba(255, 255, 255, 0.9),
+    13px 13px 33px rgba(186, 186, 186, 0.9),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.3),
+    inset -1px -1px 2px rgba(186, 186, 186, 0.5);
+  /* z-index: 3; */
+}
+.card4 {
+  width: 300px;
+  padding-right: 90px !important;
+  padding: 10px 30px;
+  background-color: #fff;
+  position: absolute;
+  right: -5%;
+  top: 30%;
+  box-shadow: -13px 13px 26px rgba(186, 186, 186, 0.2),
+    13px -13px 26px rgba(186, 186, 186, 0.2),
+    -13px -13px 26px rgba(255, 255, 255, 0.9),
+    13px 13px 33px rgba(186, 186, 186, 0.9),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.3),
+    inset -1px -1px 2px rgba(186, 186, 186, 0.5);
+  /* z-index: 3; */
+}
+.icon-table2 {
+  margin-top: 100px;
+}
+.card-BSP {
+  margin-top: 100px;
+  position: relative;
+  justify-content: space-between;
+}
+.card-BSP p {
+  font-size: 13px;
+}
+.card-base {
+  padding: 15px 80px 20px 30px;
+  background: #ffffff;
+  box-shadow: -13px 13px 26px rgba(186, 186, 186, 0.2),
+    13px -13px 26px rgba(186, 186, 186, 0.2),
+    -13px -13px 26px rgba(255, 255, 255, 0.9),
+    13px 13px 33px rgba(186, 186, 186, 0.9),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.3),
+    inset -1px -1px 2px rgba(186, 186, 186, 0.5);
+}
+.card-start {
+  padding: 15px 80px 20px 30px;
+  position: absolute;
+  left: 32%;
+  top: 14%;
+  background: #f6f6f6;
+  box-shadow: -14px 14px 28px rgba(187, 187, 187, 0.2),
+    14px -14px 28px rgba(187, 187, 187, 0.2),
+    -14px -14px 28px rgba(255, 255, 255, 0.9),
+    14px 14px 35px rgba(187, 187, 187, 0.9),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.3),
+    inset -1px -1px 2px rgba(187, 187, 187, 0.5);
+}
+
+.card-pro {
+  padding: 15px 80px 20px 30px;
+  background: #ffffff;
+  box-shadow: -18px 18px 36px rgba(184, 184, 184, 0.2),
+    18px -18px 36px rgba(184, 184, 184, 0.2),
+    -18px -18px 36px rgba(255, 255, 255, 0.9),
+    18px 18px 45px rgba(184, 184, 184, 0.9),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.3),
+    inset -1px -1px 2px rgba(184, 184, 184, 0.5);
+}
+.vs {
+  color: #fff;
+  background-color: #016b8c;
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  border-radius: 10px;
+  line-height: 90px;
+}
+.fa-arrow-right {
+  margin-left: 40px;
+}
+.dynamic-QR,
+.static-QR {
+  font-family: "Jost", sans-serif;
+  background: rgba(221, 221, 221, 0.38);
+  border-radius: 8px;
+  position: relative;
+  width: 500px;
+}
+
+.dynamic-QR img {
+  position: absolute;
+  top: 25%;
+  right: -10%;
+}
+
+.static-QR img {
+  position: absolute;
+  top: 25%;
+  left: -10%;
+}
+.dynamic-QR p {
+  width: 80%;
+}
+.static-QR p {
+  padding-left: 120px !important;
+}
+
+.know {
+  background: #a13333;
+  border-radius: 12px;
+  color: #fff;
+  width: 610px;
+  padding: 20px;
+}
+.know p {
+  padding: 50px 0px 50px 300px;
+  font-family: "Magra", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #ffffff;
+
+  opacity: 0.6;
+}
+.know-about {
+  position: relative;
+}
+.about-QR {
+  background: rgba(217, 217, 217, 0.34);
+}
+.aboutQR-img {
+  margin-left: 3px;
+  padding: 20px;
+  background: linear-gradient(135deg, #dfcbcb 0%, #ffffff 100%);
+  box-shadow: -4px 4px 8px rgba(171, 171, 171, 0.2),
+    4px -4px 8px rgba(171, 171, 171, 0.2),
+    -4px -4px 8px rgba(255, 255, 255, 0.9),
+    4px 4px 10px rgba(171, 171, 171, 0.9),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.3),
+    inset -1px -1px 2px rgba(171, 171, 171, 0.5);
+  position: absolute;
+  left: 5%;
+  top: 18%;
+}
+.contact-info {
+  padding: 60px 50px 30px 20px;
+  position: absolute;
+  width: 250px;
+  /* height: 235px; */
+  right: 22%;
+
+  top: 42%;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.17);
+  border-radius: 13px;
+}
+.contact-info img {
+  padding-right: 10px;
+}
+.contact-info p {
+  font-size: 14px;
+  padding: 3px 0;
+  margin: 0;
+  line-height: 17px;
+}
+.question1 h6,
+.question2 h6 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #000000;
+}
+.question1 p,
+.question2 ul {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 50px 0px 40px 70px;
+  color: rgba(0, 0, 0, 0.43);
+}
+.question2 ul li {
+  list-style: none;
+  line-height: 3rem;
+}
+.question2 ul li::before {
+  content: url(../img/tick.svg);
+  padding-right: 30px;
+}
+.doggy {
+  padding: 80px 40px 100px 90px;
+  background: rgba(210, 123, 38, 0.47);
+  border-radius: 9px;
+  position: relative;
+}
+.QR1 {
+  position: absolute;
+  left: 10%;
+  top: 3%;
+  background-color: #ffff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.QR2 {
+  position: absolute;
+  left: 16%;
+  bottom: 15%;
+  z-index: 4;
+}
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+  z-index: 3;
+}
+.circle-1 {
+  width: 30px;
+  height: 30px;
+  background-color: #ec7f7f;
+  border-radius: 50%;
+  position: absolute;
+  top: 5%;
+  left: -4%;
+}
+.arrow {
+  position: absolute;
+  top: 8%;
+  left: -14%;
+}
+.bone {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  background: linear-gradient(130deg, #fff 50%, #dfcbcb 50%);
+  /* -webkit-background-clip:; */
+  /* -webkit-text-fill-color: transparent; */
+  /* background-clip: text; */
+  /* text-fill-color: transparent;  */
+}
+.name {
+  position: absolute;
+  right: 5%;
+  bottom: 15%;
+  background-color: #d27b26;
+  padding: 5px 30px;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  color: #fff;
+}
+.custom-QR p,
+.custom-QR ul {
+  margin-left: 220px;
+  margin-right: 30px;
+}
+.own ul {
+  margin-left: 30px;
+}
+.own li::marker {
+  color: #eac199;
+}
+.play-date {
+  position: absolute;
+  background-color: #d27b26;
+  padding: 5px;
+  border-radius: 10px;
+  color: #fff;
+  top: 22%;
+  left: 10%;
+  text-align: center;
+
+  font-size: 10px;
+  line-height: 12px;
+}
+.color-select {
+  position: absolute;
+  bottom: 28%;
+  left: -20%;
+  /* width: 300px;
+height: 10vh; */
+  padding: 2px;
+  background: #fbfbfb;
+  box-shadow: -5px 5px 10px rgba(189, 189, 189, 0.2),
+    5px -5px 10px rgba(189, 189, 189, 0.2),
+    -5px -5px 10px rgba(245, 245, 245, 0.9),
+    5px 5px 13px rgba(189, 189, 189, 0.9),
+    inset 1px 1px 2px rgba(245, 245, 245, 0.3),
+    inset -1px -1px 2px rgba(189, 189, 189, 0.5);
+  /* border-radius: 13px; */
+}
+.cir {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.active-cir {
+  width: 15px;
+  height: 15px;
+  border: 3px solid #ffffff;
+  outline: 2px solid black;
+  border-radius: 50%;
+}
+.box {
+  position: absolute;
+  top: -7%;
+  right: 2%;
+  background: #fbfbfb;
+  box-shadow: -5px 5px 10px rgba(189, 189, 189, 0.2),
+    5px -5px 10px rgba(189, 189, 189, 0.2),
+    -5px -5px 10px rgba(245, 245, 245, 0.9),
+    5px 5px 13px rgba(189, 189, 189, 0.9),
+    inset 1px 1px 2px rgba(245, 245, 245, 0.3),
+    inset -1px -1px 2px rgba(189, 189, 189, 0.5);
+  border-radius: 13px;
+}
+.box1 {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgb(147, 139, 139);
+  background-color: gray;
+}
+.box2 {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgb(97, 92, 92);
+  background-color: gray;
+}
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.pink {
+  background-color: pink;
+}
+.black {
+  background-color: #000;
+}
+.gray {
+  background-color: gray;
+}
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: rgba(128, 128, 128, 0.285);
+}
+.play-date p {
+  margin: 0;
+}
+.create-QR {
+  position: absolute;
+  right: -50%;
+  top: 20%;
+  background: #fbfbfb;
+  box-shadow: -5px 5px 10px rgba(189, 189, 189, 0.2),
+    5px -5px 10px rgba(189, 189, 189, 0.2),
+    -5px -5px 10px rgba(245, 245, 245, 0.9),
+    5px 5px 13px rgba(189, 189, 189, 0.9),
+    inset 1px 1px 2px rgba(245, 245, 245, 0.3),
+    inset -1px -1px 2px rgba(189, 189, 189, 0.5);
+  border-radius: 13px;
+}
+.create-QR input {
+  border-radius: 10px;
+  padding: 0 5px;
+  border: 1px solid gray;
+}
+.create-QR button {
+  border-radius: 10px;
+  border: none;
+  background-color: #016b8c;
+  color: #fff;
+  font-family: "Magra", sans-serif;
+}
+.custom-QR .free-QR {
+  border: 1px solid gray;
+  border-radius: 20px;
+}
+
+.custom-QR .free-QR li::marker {
+  color: #016b8c;
+}
+.free-QR .selected {
+  background-color: #016b8c;
+  color: #fff;
+}
+
+.contact-card {
+  padding: 20px 5px 20px 40px;
+  font-family: "Jost", sans-serif;
+  background: linear-gradient(135deg, #ffffff 0%, #eaeaea 100%);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: -5px 5px 10px rgba(221, 221, 221, 0.2),
+    5px -5px 10px rgba(221, 221, 221, 0.2),
+    -5px -5px 10px rgba(255, 255, 255, 0.9),
+    5px 5px 13px rgba(221, 221, 221, 0.9),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.3),
+    inset -1px -1px 2px rgba(221, 221, 221, 0.5);
+}
+.contact-card p,
+.contact-card ul {
+  font-size: 14px;
+
+  opacity: 0.6;
+}
+.contact-card ul {
+  padding: 0;
+}
+.contact-card button {
+  margin-left: 30px;
+  padding: 1px 40px;
+  border-radius: 30px;
+  font-size: 14px;
+  border: none;
+  background-color: #016b8c;
+  transition: 0.5s ease;
+}
+.contact-card button:hover {
+  background-color: #299bbd;
+}
+.contact-card button a {
+  color: #fff;
+  text-decoration: none;
+}
+.contact-card ul li {
+  line-height: 2rem;
+  list-style: none;
+}
+.contact-card ul li::before {
+  content: url(../img/tick.svg);
+  padding-right: 10px;
+}
+
+.footer-container {
+  margin: 0;
+
+  color: #fff;
+  background-color: #016b8c;
+}
+hr {
+  margin: 0 10px;
+}
+footer hr {
+  border: 1px solid #fff;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+.copy {
+  /* width: 100%; */
+  padding: 20px 5px;
+  color: #fff;
+  background-color: #00546e;
+}
+.modal-body a{
+text-decoration: none;}
+.modal-body button{
+color:white;
+background-color: #016b8c;
+border: none;
+margin-top:10px;}
+.modal-body button a{
+color: white;}
+ .bank{
+/* align-items: center; */
+justify-content: space-around;
+padding: 0 !important;}
+.modal-body {
+font-size: 12px;}
+.modal-body form input{
+cursor: pointer;
+margin-top: 20px;}
+
+.modal-body .modal-left{
+  margin: 0 !important;
+  padding: 10px;
+background-color: #016b8c;
+color: #fff;}
+.modal-body .modal-left button{
+border: 1px solid white;
+border-radius: 5px;
+padding: 2px 10px ;}
+
+/* @media (min-width: 576px){
+.modal-dialog {
+    max-width: 800px;
+  }} */
+/* -----------signup form --------------- */
+
+.left-container {
+  background-color: #00546e;
+}
+.right-container {
+  font-family: "Jost", sans-serif;
+  color: #000;
+  width: 40%;
+  margin: 20px 10px 0 20px;
+  padding: 0px 10px 0px 20px;
+}
+.signup a {
+  text-decoration: none;
+  color: #fff;
+}
+.right-container input {
+  padding: 2px 0 0 10px;
+}
+.right-container input,
+.right-container button {
+  border: 1px solid rgba(128, 128, 128, 0.466);
+
+  border-radius: 10px;
+}
+.right-container button {
+  background-color: #016b8c;
+  color: white;
+}
+.right-container label,
+.right-container p {
+  padding: 10px;
+}
+.right-container p {
+  padding-right: 150px;
+  color: gray;
+}
+.signup {
+  padding: 160px 20px 0 100px;
+  font-family: "Jost", sans-serif;
+}
+.signup .para {
+  width: 60%;
+}
+.signup button {
+  background-color: transparent;
+  color: #fff;
+  padding: 1px 90px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+/* ------------login form-------------- */
+
+.login {
+  font-family: "Jost", sans-serif;
+  position: relative;
+}
+.login-right {
+  width: 50%;
+  height: 100vh;
+  background-color: #016b8c;
+  padding: 160px 20px 0 150px;
+  color: white;
+  overflow: hidden;
+
+  position: relative;
+}
+.login-right::before{
+content: "";
+
+position: absolute;
+width: 100%;
+height: 200%;
+background-color: inherit;
+transform: skewx(-10deg);
+bottom: 0;
+right: 0;
+z-index: -1;}
+.login-right button {
+  background-color: transparent;
+  color: #fff;
+  padding: 1px 90px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.login-left {
+  width: 40%;
+  margin: 100px 20px 0 20px;
+  padding: 0px 200px 0px 20px;
+}
+.login-left label,
+.login-left p,
+.login-left a {
+  padding: 10px;
+}
+.login-left input,
+.login-left button {
+  border: 1px solid rgba(128, 128, 128, 0.466);
+  border-radius: 10px;
+}
+.login-left input {
+  padding: 2px 10px;
+}
+.login-left a {
+  text-decoration: none;
+  color: #000;
+}
+.login-left button {
+  margin-top: 50px;
+  border: none;
+  background-color: #016b8c;
+  color: #fff;
+}
+.login-right a {
+  text-decoration: none;
+  color: white;
+}
+
+.righta-triangle {
+  position: absolute;
+  top: -1px;
+  right: 33%;
+  width: 0px;
+  height: 0px;
+  border-left: 307px solid rgb(255, 255, 255);
+  border-right: 300px soild transparent;
+  border-bottom: 900px solid transparent;
+  overflow-y: hidden;
+  transform: rotate(-5deg);
+}
+
+/*------------- createQR style -------------- */
+.create-header {
+  background-color: #016b8c;
+  color: white;
+}
+
+.create button {
+  background-color: #016b8c;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+.create-container {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.26);
+  box-shadow: -10px 10px 20px rgba(214, 214, 214, 0.2),
+    10px -10px 20px rgba(214, 214, 214, 0.2),
+    -10px -10px 20px rgba(255, 255, 255, 0.9),
+    10px 10px 25px rgba(214, 214, 214, 0.9),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.3),
+    inset -1px -1px 2px rgba(214, 214, 214, 0.5);
+
+  border-radius: 10px;
+  margin-right: 150px !important;
+}
+.create-left {
+  width: 40%;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+}
+.create-right img {
+  padding: 1px;
+  box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.3),
+    inset -1px -1px 2px rgba(156, 156, 156, 0.5);
+
+  background: #d9d9d9;
+  border-radius: 8px;
+}
+.create-left button {
+  background-color: #016b8c;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  padding: 2px 10px;
+}
+.border {
+  border: 1px solid rgba(0, 0, 0, 0.493) !important;
+  border-radius: 10px;
+}
+.offcanvas-body button {
+  color: white !important;
+  background-color: #016b8c;
+  border: none;
+  border-radius: 5px;
+}
+.offcanvas-body button:hover i {
+  color: rgb(255, 253, 253) !important ;
+}
+.fa-bars {
+  cursor: pointer;
+}
+
+/*---------------- personal-card ----------------*/
+
+.gray-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #a1c8d4;
+}
+.white-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgb(250, 250, 250);
+  position: absolute;
+  top: 10%;
+  left: 12%;
+}
+.small-triangle {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 35px solid #a1c8d4;
+  transform: rotate(300deg);
+  position: absolute;
+  top: 50px;
+  left: 71px;
+}
+.round0 {
+  background: rgba(217, 217, 217, 0.26);
+  border-radius: 50px;
+}
+.round1 {
+  position: relative;
+}
+.round1 img {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+
+/*------------- personal-card----------------- */
+.personal-card form {
+  width: 90%;
+}
+.personal-card {
+  font-family: "Jost", sans-serif;
+  /* padding-right: %; */
+  margin-left: 5%;
+  border: 1px solid gray;
+  background: #ffffff;
+  box-shadow: -9px 9px 18px rgba(212, 212, 212, 0.2),
+    9px -9px 18px rgba(212, 212, 212, 0.2),
+    -9px -9px 18px rgba(255, 255, 255, 0.9),
+    9px 9px 23px rgba(212, 212, 212, 0.9),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.3),
+    inset -1px -1px 2px rgba(212, 212, 212, 0.5);
+  border-radius: 10px;
+}
+.personal-card form input {
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.623);
+}
+.personal-card form label,
+.personal-card form p,
+.personal-card form h6 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.phone {
+  position: relative;
+}
+.pink-rec {
+  position: absolute;
+  top: 10%;
+  left: 8%;
+
+  height: 36rem;
+  width: 22rem;
+  background-color: #e87e7e;
+}
+.white-rec {
+  position: absolute;
+  top: 25%;
+  left: 12%;
+  height: 25rem;
+  width: 20rem;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.phone-img {
+  position: absolute;
+  top: 15%;
+  left: 30%;
+}
+.gray-line {
+  width: 200px;
+  height: 5px;
+  background-color: rgb(64, 62, 62);
+  position: absolute;
+  top: 5%;
+  left: 25%;
+}
+.btn-1 {
+  margin-left: 50px;
+  padding: 5px 150px;
+  color: #fff;
+  background-color: #016b8c;
+  border: none;
+}
+
+/*------------- static-dyamaic--------------- */
+/* Style for the tabs */
+.tab {
+  overflow: hidden;
+  border: 2px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style for the tab links */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+.tablinks {
+  color: gray;
+}
+
+.tab button.active {
+  background-color: #fff;
+
+  border-top: 2px;
+  border-left: 2px;
+  border-bottom: 0px;
+
+  border-color: gray;
+  border-style: solid;
+  /* padding: 16px 16px;
+    transform: scale(1.2); */
+  color: black;
+}
+/* .tab button.active .tablinks{
+  color: #000;} */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.tab button .tablinks {
+  color: gray !important;
+}
+.link1 {
+  padding: 5px 20px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+.link1 p {
+  font-size: 14px;
+}
+.staticQR-img {
+  background-color: #d9d9d9;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* ----------------generate-Qr-------------- */
+
+.generateQR-left {
+  background: #ffffff;
+  box-shadow: -9px 9px 18px rgba(212, 212, 212, 0.2),
+    9px -9px 18px rgba(212, 212, 212, 0.2),
+    -9px -9px 18px rgba(255, 255, 255, 0.9),
+    9px 9px 23px rgba(212, 212, 212, 0.9),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.3),
+    inset -1px -1px 2px rgba(212, 212, 212, 0.5);
+  width: 60%;
+  padding: 100px 100px 30px 100px;
+}
+.generateQR-right {
+  background: #ffffff;
+  box-shadow: -9px 9px 18px rgba(212, 212, 212, 0.2),
+    9px -9px 18px rgba(212, 212, 212, 0.2),
+    -9px -9px 18px rgba(255, 255, 255, 0.9),
+    9px 9px 23px rgba(212, 212, 212, 0.9),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.3),
+    inset -1px -1px 2px rgba(212, 212, 212, 0.5);
+  margin-left: 100px;
+}
+.generateQR-left button {
+  background-color: #016b8c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.generateQR-right img {
+  background-color: #d9d9d9;
+  width: 70%;
+  margin: 50px;
+  border-radius: 10px;
+}
+
+/* ---------color-generate----------- */
+.generateQR-left input[type="color"] {
+  width: 15px;
+  height: 15px;
+  margin-top: 5px;
+  z-index: 6;
+  border: 2px solid rgb(255, 255, 255);
+  outline: 1px solid black;
+}
+.generateQR-right button {
+  /* padding: 2px 50px; */
+  margin: 0 50px;
+  border: none;
+  color: #fff;
+  background-color: #016b8c;
+}
+.generateQR-left .form {
+  border: 1px solid gray;
+  padding: 20px 150px 20px 20px;
+  border-radius: 10px;
+}
+.generateQR-left p {
+  border: 1px solid gray;
+  font-size: 12px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  background-color: #a1c8d4;
+}
+
+/* -------------account-settings--------- */
+.general {
+  border: 2px solid rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+}
+.account-container{
+  background: #ffffff;
+  box-shadow: -9px 9px 18px rgba(212, 212, 212, 0.2),
+    9px -9px 18px rgba(212, 212, 212, 0.2),
+    -9px -9px 18px rgba(255, 255, 255, 0.9),
+    9px 9px 23px rgba(212, 212, 212, 0.9),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.3),
+    inset -1px -1px 2px rgba(212, 212, 212, 0.5);
+    border: 1px solid #0000005c;
+border-radius: 0px 8px 8px 8px;
+}
+.account {
+  margin-top: 10px;
+  padding: 5px;
+  width: 25%;
+  box-shadow: -9px 9px 18px rgba(212, 212, 212, 0.2),
+  9px -9px 18px rgba(212, 212, 212, 0.2),
+  -9px -9px 18px rgba(255, 255, 255, 0.9),
+  9px 9px 23px rgba(212, 212, 212, 0.9),
+  inset 1px 1px 2px rgba(255, 255, 255, 0.3),
+  inset -1px -1px 2px rgba(212, 212, 212, 0.5);
+  background-color: #fff;
+  border: 1px solid #0000005c;
+  border-radius: 0px 8px 0px 0px;
+}
+.general label {
+  color: gray;
+  padding: 5px 0;
+}
+.general input {
+  border: 1px solid rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  width: 50%;
+}
+.sub {
+  border: 2px solid rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+
+}
+.sub button{
+color: #fff;
+background-color: #016b8c;
+border-radius: 5px;
+padding: 3px 40px;
+border: none;}
+
+
+/*-------------- mobile responsive--------------- */
+
+@media only screen and (max-width:500px){
+  .title li a ,  .title li a button{
+font-size: 12px;
+
+}
+
+.title li {
+
+  padding: 0px 10px !important;
+  margin: 0 !important ;
+}
+.selection {
+  margin-right: 50px !important;
+}
+.card2{
+position: relative;
+left: 0;
+top: 0;}
+
+.card4{
+  position: relative;
+  left: 0;
+  top: 0;
+  }
+  .dynamic-QR, .static-QR {
+  width: auto;}
+  .dynamic-QR p {
+    width: 100%;
+}
+  .dynamic-QR img {
+    position: relative;
+    top: 2%;
+    /* right: -10%; */
+}
+.static-QR img {
+  position: relative;
+  top: 2%;
+  /* left: -10%; */
+}
+.static-QR p {
+  padding-left: 10px !important;
+}
+  .card-start {
+
+    position: relative;
+    left: 0%;
+    top: 0%;}
+    .aboutQR-img {
+    position: relative;
+    left: 0;
+    /* top: 0; */
+  margin-top: 50px;}
+    
+   .know{
+  width:100%;}
+.know p {
+padding: 0;}
+.contact-info{
+position: relative;
+/* top: 0; */
+left: 0;
+margin-top: 50px;
+}
+.doggy {
+  padding: 69px 27px 90px 20px;}
+
+  .custom-QR p, .custom-QR ul {
+    margin-left: 10px;
+    margin-right: 0px;
+
+  }
+  .circle{
+  bottom: 2%;}
+  .QR2 {
+
+    left: 17%;
+    bottom: 7%;
+
+}
+.color-select {
+
+  bottom: 23%;
+  left: 0%;}
+  .create-QR {
+
+    right: 0%;
+    top: 22%;}
+    .bone{
+    right: 30%;}
+    .QR1 {
+    left:4%}
+
+.play-date {
+left:5%;}
+.offcanvas-body p {
+  padding: 0px;
+   margin-right: 0px;}
+   .offcanvas-start {
+    width:300px}
+    .general input {
+    width: 80%;}
+    .account{
+    width: 50%;}
+    .generateQR-left {
+    padding: 0;
+    width: auto;
+    }
+    .generateQR-left .form {
+      border: 1px solid rgba(128, 128, 128, 0.511);
+      padding: 18px 34px 20px 20px;
+
+  }
+  .create-left {
+  width: 100%;}
+.create-container {
+margin-right: 0 !important;
+padding: 10px;}
+.generateQR-right {
+margin-left: 0;}
+.login-right {
+
+width: 100%;
+}
+.login-left{
+  padding: 0px 35px 0px 20px;
+}
+.right-container {
+width: auto;}
+.right-container p {
+padding-right: 0;}
+}
