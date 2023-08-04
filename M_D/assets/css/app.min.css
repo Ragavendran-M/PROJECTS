@@ -4577,4 +4577,26 @@ body[data-layout="horizontal"] .chat-conversation {
 
     transform: translateY(-10px);
 }
-/*# sourceMappingURL=app.min.css.map */
+.empid,.vehicleid{
+  color: var(--bs-primary);
+  font-weight: 600;
+  transition: .3s ease;
+}
+.empid:hover,.vehicleid:hover{
+  color: var(--bs-dark);
+}
+.defectbtn {
+  background: #dc3545;
+  display: inline-grid;
+  height: 30px;
+  width: 60px;
+  border-radius: 4px;
+}
+.goodbtn {
+  background: #28a745;
+  display: inline-grid;
+  height: 30px;
+  width: 60px;
+  border-radius: 4px;
+}
+

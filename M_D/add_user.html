@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en" data-theme-mode="red">
+  <head>
+    <meta charset="utf-8" />
+    <title>M&D Foundations</title>
+   
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+    <!-- Bootstrap Css -->
+    <link
+      href="assets/css/bootstrap.min.css"
+      id="bootstrap-style"
+      rel="stylesheet"
+      type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- select2 css -->
+    <link rel="stylesheet" href="assets/css/select2.css">
+    <!-- App Css-->
+    <link
+      href="assets/css/app.min.css"
+      id="style"
+      rel="stylesheet"
+      type="text/css" />
+  </head>
+
+  <body data-sidebar="dark">
+    <!-- <body data-layout="horizontal" data-topbar="colored"> -->
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="d-flex">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box">
+                        <a href="index.html" class="logo logo-dark">
+                            <span class="logo-sm">
+                                <img src="assets/images/M&D logo.png" alt="" height="18">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/M&D logo.png" alt="" height="50">
+                            </span>
+                        </a>
+        
+                        <a href="index.html" class="logo logo-light">
+                            <span class="logo-sm">
+                                <img src="assets/images/M&D logo.png" alt="" height="18">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/M&D logo.png" alt="" height="50">
+                            </span>
+                        </a>
+                    </div>
+        
+                    <button type="button" class="btn btn-sm px-3 font-size-24 header-item waves-effect vertical-menu-btn">
+                        <i class="mdi mdi-menu"></i>
+                    </button>
+        
+                    <div class="d-none d-sm-block">
+                        <div class="dropdown dropdown-topbar pt-3 mt-1 d-inline-block">
+                           
+        
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="d-flex">
+        
+                    <!-- App Search-->
+                    <form class="app-search d-none d-lg-block">
+                        <div class="position-relative">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <span class="fa fa-search"></span>
+                        </div>
+                    </form>
+        
+                    <div class="dropdown d-inline-block d-lg-none ms-2">
+                        <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="mdi mdi-magnify"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0"
+                            aria-labelledby="page-header-search-dropdown">
+                            
+                            <form class="p-3">
+                                <div class="form-group m-0">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+        
+        
+        
+        
+                    <div class="dropdown d-none d-lg-inline-block">
+                        <button type="button" class="btn header-item noti-icon waves-effect" data-toggle="fullscreen">
+                            <i class="mdi mdi-fullscreen font-size-24"></i>
+                        </button>
+                    </div>
+        
+                    <div class="dropdown d-inline-block ms-1">
+                        <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-notifications-dropdown"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="ti-bell"></i>
+                            <span class="badge bg-primary rounded-pill">3</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                            aria-labelledby="page-header-notifications-dropdown">
+                            <div class="p-3">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <h5 class="m-0"> Notifications (258) </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-simplebar style="max-height: 230px;">
+                                <a href="javascript:void(0);" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <div class="avatar-xs">
+                                            <span class="avatar-title border-success rounded-circle ">
+                                                <i class="mdi mdi-cart-outline"></i>
+                                            </span>
+                                        </div>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1">Your order is placed</h6>
+                                            <div class="text-muted">
+                                                <p class="mb-1">If several languages coalesce the grammar</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+        
+                                <a href="javascript:void(0);" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <div class="avatar-xs">
+                                            <span class="avatar-title border-warning rounded-circle ">
+                                                <i class="mdi mdi-message"></i>
+                                            </span>
+                                        </div>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1">New Message received</h6>
+                                            <div class="text-muted">
+                                                <p class="mb-1">You have 87 unread messages</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+        
+                                <a href="javascript:void(0);" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <div class="avatar-xs">
+                                            <span class="avatar-title border-info rounded-circle ">
+                                                <i class="mdi mdi-glass-cocktail"></i>
+                                            </span>
+                                        </div>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1">Your item is shipped</h6>
+                                            <div class="text-muted">
+                                                <p class="mb-1">It is a long established fact that a reader will</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+        
+                                <a href="javascript:void(0);" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <div class="avatar-xs">
+                                            <span class="avatar-title border-primary rounded-circle ">
+                                                <i class="mdi mdi-cart-outline"></i>
+                                            </span>
+                                        </div>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1">Your order is placed</h6>
+                                            <div class="text-muted">
+                                                <p class="mb-1">Dummy text of the printing and typesetting industry.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+        
+                                <a href="javascript:void(0);" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <div class="avatar-xs">
+                                            <span class="avatar-title border-warning rounded-circle ">
+                                                <i class="mdi mdi-message"></i>
+                                            </span>
+                                        </div>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1">New Message received</h6>
+                                            <div class="text-muted">
+                                                <p class="mb-1">You have 87 unread messages</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="p-2 border-top">
+                                <a class="btn btn-sm btn-link font-size-14 w-100 text-center" href="javascript:void(0)">
+                                    View all
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+        
+                    <div class="dropdown d-inline-block">
+                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="rounded-circle header-profile-user" src="assets/images/users/user-4.jpg"
+                                alt="Header Avatar">
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <!-- item-->
+                            <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle font-size-17 text-muted align-middle me-1"></i> Profile</a>
+                            <a class="dropdown-item" href="#"><i class="mdi mdi-wallet font-size-17 text-muted align-middle me-1"></i> My Wallet</a>
+                            <a class="dropdown-item d-flex align-items-center" href="#"><i class="mdi mdi-cog font-size-17 text-muted align-middle me-1"></i> Settings<span class="badge bg-success ms-auto">11</span></a>
+                            <a class="dropdown-item" href="#"><i class="mdi mdi-lock-open-outline font-size-17 text-muted align-middle me-1"></i> Lock screen</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-danger" href="#"><i class="mdi mdi-power font-size-17 text-muted align-middle me-1 text-danger"></i> Logout</a>
+                        </div>
+                    </div>
+                    
+                   
+                </div>
+            </div>
+        </header>
+                    
+          <!-- ========== Left Sidebar Start ========== -->
+          <div class="vertical-menu">
+    
+            <div data-simplebar class="h-100">
+    
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled" id="side-menu"> 
+    
+                        <li>
+                            <a href="index.html" class="waves-effect">
+                                <i class="ti-home"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="users.html" class=" waves-effect">
+                                <i class="mdi mdi-account-supervisor-outline"></i>
+                                <span>Users</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="vehical.html" class=" waves-effect">
+                                <i class="ion ion-ios-car"></i>
+                                <span>Vehicles</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="vehicle_assign.html" class=" waves-effect">
+                                <i class="mdi mdi-account-arrow-left-outline"></i>
+                                <span>Vehicle Assign</span>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="mdi mdi-check-decagram"></i>
+                                <span>Inspection</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="CompletedInspection.html">Completed Inspection</a></li>
+                                <li><a href="pendingInspection.html">Pending Inspection</a></li>
+                                <li><a href="MissedInspiction.html">Missed Inspection</a></li>
+                            </ul>
+                        </li>
+    
+                        <li>
+                            <a href="reportedIncidents.html" class=" waves-effect">
+                                <i class="mdi mdi-clipboard-pulse-outline"></i>
+                                <span>Reported Incidents</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="fas fa-archive"></i>
+                                <span>Archive</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="ArchiveInspection.html">Inspection Details</a></li>
+                                <li><a href="ArchiveMissed.html">Missed Inspection</a></li>
+                                <li><a href="ArchiveReported.html">Reported Incidents</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="settings.html" class=" waves-effect">
+                                <i class="mdi mdi-cog-outline"></i>
+                                <span>Settings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="logout.html" class=" waves-effect">
+                                <i class="mdi mdi-logout-variant"></i>
+                                <span>Log Out</span>
+                            </a>
+                        </li>
+                      
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+      <!-- Left Sidebar End -->
+
+      <!-- ============================================================== -->
+      <!-- Start right Content here -->
+      <!-- ============================================================== -->
+      <div class="main-content">
+        <div class="page-content">
+            <div class="container-xl">
+			    
+			   
+                <div class="row g-3 mb-4 align-items-center justify-content-between">
+                    <div class="col-auto">
+                        <h3 class="page-title text-primary mb-0">Update User</h3>
+                    </div>
+                    <div class="col-auto">
+                         <a href="users.html" class="btn btn-primary">Users List</a>
+                         <a href="users.html" class="btn btn-primary">Back</a>
+                    </div><!--//col-auto-->
+                </div>
+                
+                
+                <div class="row g-4">
+                     
+                    <div class="col-12">
+                        <div class="card card-settings shadow-sm p-4">
+                            
+                            <div class="card-body">
+                                <form class="settings-form" method="POST" action="#" enctype="multipart/form-data" novalidate="">
+                                           <div class="row">
+                
+                                        <div class="col-6"> 
+                                            <div class="mb-3">
+                                                <label for="name" class="form-label req">Name</label>
+                                                <input type="text" class="form-control" id="name" name="name"  required="">
+                                            </div> 
+                                        </div>
+                
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label for="role" class="form-label req">Role</label>
+                                                <select class="form-control" id="role" name="role" required="">
+                                                    <option value="" selected disabled>Select</option>
+                                                    <option value="admin">Admin</option>
+                                                    <option value="driver" >Driver</option>
+                                                </select>
+                                                  </div> 
+                                        </div>
+                
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label for="position" class="form-label ">Position</label>
+                                                <input type="text" class="form-control" id="position" name="position"  required="">
+                                            </div> 
+                                        </div>
+                
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label for="gender" class="form-label ">Gender</label>
+                                                <select class="form-control" id="gender" name="gender" required="">
+                                                    <option value="">Select</option>
+                                                    <option value="male">Male</option>
+                                                    <option value="female">Female</option>
+                                                </select> 
+                                             </div> 
+                                        </div>
+                
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label for="dateofbirth" class="form-label req">D.O.B</label>
+                                                <input type="text" class="form-control datepicker" id="dateofbirth" name="dateofbirth"  required="">
+                                            </div> 
+                                        </div>
+                
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label for="company" class="form-label req">Company</label>
+                                                <input type="text" class="form-control" id="company" name="company"  required="">
+                                            </div> 
+                                        </div>
+                
+                                      </div>
+                
+                                      <div class="row">
+                
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label for="address" class="form-label req">Address</label>
+                                                <textarea class="form-control" name="address" id="address" rows="3"></textarea>
+                                            </div> 
+                                        </div>
+                
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label for="city" class="form-label">City</label>
+                                                <select class="form-control select-dropdown" name="city" id="city" data-width="100%" required="">
+                                                    <option value="">Select</option>
+                                                                                        <option value="2">Aberdeen City</option>    
+                                                                                        <option value="3">Aberdeenshire</option>    
+                                                                                        <option value="4">Angus</option>    
+                                                                                        <option value="34">Antrim and Newtownabbey</option>    
+                                                                                        <option value="35">Ards and North Down</option>    
+                                                                                        <option value="5">Argyll and Bute</option>    
+                                                                                        <option value="43">Barking and Dagenham</option>    
+                                                                                        <option value="44">Barnet</option>    
+                                                                                        <option value="75">Barnsley</option>    
+                                                                                        <option value="138">Bath and North East Somerset</option>    
+                                                                                        <option value="139">Bedford</option>    
+                                                                                        <option value="36">Belfast City</option>    
+                                                                                        <option value="45">Bexley</option>    
+                                                                                        <option value="76">Birmingham</option>    
+                                                                                        <option value="140">Blackburn with Darwen</option>    
+                                                                                        <option value="141">Blackpool</option>    
+                                                                                        <option value="142">Blaenau Gwent</option>    
+                                                                                        <option value="77">Bolton</option>    
+                                                                                        <option value="143">Bracknell Forest</option>    
+                                                                                        <option value="78">Bradford</option>    
+                                                                                        <option value="46">Brent</option>    
+                                                                                        <option value="144">Bridgend </option>    
+                                                                                        <option value="145">Brighton and Hove</option>    
+                                                                                        <option value="146">Bristol</option>    
+                                                                                        <option value="47">Bromley</option>    
+                                                                                        <option value="111">Buckinghamshire</option>    
+                                                                                        <option value="79">Bury</option>    
+                                                                                        <option value="147">Caerphilly </option>    
+                                                                                        <option value="80">Calderdale</option>    
+                                                                                        <option value="112">Cambridgeshire</option>    
+                                                                                        <option value="48">Camden</option>    
+                                                                                        <option value="148">Cardiff</option>    
+                                                                                        <option value="149">Carmarthenshire</option>    
+                                                                                        <option value="37">Causeway Coast and Glens</option>    
+                                                                                        <option value="150">Central Bedfordshire</option>    
+                                                                                        <option value="151">Ceredigion</option>    
+                                                                                        <option value="152">Cheshire East</option>    
+                                                                                        <option value="153">Cheshire West and Chester</option>    
+                                                                                        <option value="6">Clackmannanshire</option>    
+                                                                                        <option value="154">Conwy</option>    
+                                                                                        <option value="155">Cornwall</option>    
+                                                                                        <option value="81">Coventry</option>    
+                                                                                        <option value="49">Croydon</option>    
+                                                                                        <option value="113">Cumbria</option>    
+                                                                                        <option value="156">Darlington</option>    
+                                                                                        <option value="157">Denbighshire </option>    
+                                                                                        <option value="158">Derby</option>    
+                                                                                        <option value="114">Derbyshire</option>    
+                                                                                        <option value="38">Derry and Strabane</option>    
+                                                                                        <option value="115" >Devon</option>    
+                                                                                        <option value="82">Doncaster</option>    
+                                                                                        <option value="116">Dorset</option>    
+                                                                                        <option value="83">Dudley</option>    
+                                                                                        <option value="7">Dumfries and Galloway</option>    
+                                                                                        <option value="8">Dundee City</option>    
+                                                                                        <option value="50"  >Ealing</option>    
+                                                                                        <option value="9">East Ayrshire</option>    
+                                                                                        <option value="10">East Dunbartonshire</option>    
+                                                                                        <option value="11">East Lothian</option>    
+                                                                                        <option value="12">East Renfrewshire</option>    
+                                                                                        <option value="159">East Riding of Yorkshire</option>    
+                                                                                        <option value="117">East Sussex</option>    
+                                                                                        <option value="13">Edinburgh</option>    
+                                                                                        <option value="14">Eilean Siar</option>    
+                                                                                        <option value="51">Enfield</option>    
+                                                                                        <option value="118">Essex</option>    
+                                                                                        <option value="15">Falkirk</option>    
+                                                                                        <option value="39">Fermanagh and Omagh</option>    
+                                                                                        <option value="16">Fife</option>    
+                                                                                        <option value="160">Flintshire</option>    
+                                                                                        <option value="84">Gateshead</option>    
+                                                                                        <option value="17">Glasgow City</option>    
+                                                                                        <option value="119">Gloucestershire</option>    
+                                                                                        <option value="52">Greenwich</option>    
+                                                                                        <option value="161">Gwynedd</option>    
+                                                                                        <option value="53">Hackney</option>    
+                                                                                        <option value="162">Halton</option>    
+                                                                                        <option value="54">Hammersmith and Fulham</option>    
+                                                                                        <option value="120">Hampshire</option>    
+                                                                                        <option value="55">Haringey</option>    
+                                                                                        <option value="56">Harrow</option>    
+                                                                                        <option value="163">Hartlepool</option>    
+                                                                                        <option value="57">Havering</option>    
+                                                                                        <option value="164">Herefordshire</option>    
+                                                                                        <option value="121">Hertfordshire</option>    
+                                                                                        <option value="18">Highland</option>    
+                                                                                        <option value="58">Hillingdon</option>    
+                                                                                        <option value="59">Hounslow</option>    
+                                                                                        <option value="19">Inverclyde</option>    
+                                                                                        <option value="165">Isle of Anglesey</option>    
+                                                                                        <option value="166">Isle of Wight</option>    
+                                                                                        <option value="167">Isles of Scilly</option>    
+                                                                                        <option value="60">Islington</option>    
+                                                                                        <option value="61">Kensington and Chelsea</option>    
+                                                                                        <option value="122">Kent</option>    
+                                                                                        <option value="168">Kingston upon Hull</option>    
+                                                                                        <option value="62">Kingston upon Thames</option>    
+                                                                                        <option value="85">Kirklees</option>    
+                                                                                        <option value="86">Knowsley</option>    
+                                                                                        <option value="63">Lambeth</option>    
+                                                                                        <option value="123">Lancashire</option>    
+                                                                                        <option value="87">Leeds</option>    
+                                                                                        <option value="169">Leicester</option>    
+                                                                                        <option value="124">Leicestershire</option>    
+                                                                                        <option value="64">Lewisham</option>    
+                                                                                        <option value="125">Lincolnshire</option>    
+                                                                                        <option value="40">Lisburn and Castlereagh</option>    
+                                                                                        <option value="88">Liverpool</option>    
+                                                                                        <option value="1">London</option>    
+                                                                                        <option value="170">Luton</option>    
+                                                                                        <option value="89">Manchester</option>    
+                                                                                        <option value="171">Medway</option>    
+                                                                                        <option value="172">Merthyr Tydfil </option>    
+                                                                                        <option value="65">Merton</option>    
+                                                                                        <option value="41">Mid and East Antrim</option>    
+                                                                                        <option value="42">Mid-Ulster</option>    
+                                                                                        <option value="173">Middlesbrough</option>    
+                                                                                        <option value="20">Midlothian</option>    
+                                                                                        <option value="174">Milton Keynes</option>    
+                                                                                        <option value="175">Monmouthshire </option>    
+                                                                                        <option value="21">Moray</option>    
+                                                                                        <option value="176">Neath Port Talbot </option>    
+                                                                                        <option value="90">Newcastle upon Tyne</option>    
+                                                                                        <option value="66">Newham</option>    
+                                                                                        <option value="177">Newport</option>    
+                                                                                        <option value="126">Norfolk</option>    
+                                                                                        <option value="22">North Ayrshire</option>    
+                                                                                        <option value="178">North East Lincolnshire</option>    
+                                                                                        <option value="23">North Lanarkshire</option>    
+                                                                                        <option value="179">North Lincolnshire</option>    
+                                                                                        <option value="180">North Somerset</option>    
+                                                                                        <option value="91">North Tyneside</option>    
+                                                                                        <option value="127">North Yorkshire</option>    
+                                                                                        <option value="128">Northamptonshire</option>    
+                                                                                        <option value="181">Northumberland</option>    
+                                                                                        <option value="182">Nottingham</option>    
+                                                                                        <option value="129">Nottinghamshire</option>    
+                                                                                        <option value="92">Oldham</option>    
+                                                                                        <option value="24">Orkney Islands</option>    
+                                                                                        <option value="130">Oxfordshire</option>    
+                                                                                        <option value="183">Pembrokeshire </option>    
+                                                                                        <option value="25">Perth and Kinross</option>    
+                                                                                        <option value="184">Peterborough</option>    
+                                                                                        <option value="185">Plymouth</option>    
+                                                                                        <option value="186">Portsmouth</option>    
+                                                                                        <option value="187">Powys</option>    
+                                                                                        <option value="188">Reading</option>    
+                                                                                        <option value="67">Redbridge</option>    
+                                                                                        <option value="189">Redcar and Cleveland</option>    
+                                                                                        <option value="26">Renfrewshire</option>    
+                                                                                        <option value="190">Rhondda Cynon Taff </option>    
+                                                                                        <option value="68">Richmond upon Thames</option>    
+                                                                                        <option value="93">Rochdale</option>    
+                                                                                        <option value="94">Rotherham</option>    
+                                                                                        <option value="191">Rutland</option>    
+                                                                                        <option value="95">Salford</option>    
+                                                                                        <option value="96">Sandwell</option>    
+                                                                                        <option value="27">Scottish Borders</option>    
+                                                                                        <option value="97">Sefton</option>    
+                                                                                        <option value="98">Sheffield</option>    
+                                                                                        <option value="28">Shetland Islands</option>    
+                                                                                        <option value="192">Shropshire</option>    
+                                                                                        <option value="193">Slough</option>    
+                                                                                        <option value="99">Solihull</option>    
+                                                                                        <option value="131">Somerset</option>    
+                                                                                        <option value="29">South Ayrshire</option>    
+                                                                                        <option value="194">South Gloucestershire</option>    
+                                                                                        <option value="30">South Lanarkshire</option>    
+                                                                                        <option value="100">South Tyneside</option>    
+                                                                                        <option value="195">Southampton</option>    
+                                                                                        <option value="196">Southend-on-Sea</option>    
+                                                                                        <option value="69">Southwark</option>    
+                                                                                        <option value="101">St. Helens</option>    
+                                                                                        <option value="132">Staffordshire</option>    
+                                                                                        <option value="31">Stirling</option>    
+                                                                                        <option value="102">Stockport</option>    
+                                                                                        <option value="197">Stockton-on-Tees</option>    
+                                                                                        <option value="198">Stoke-on-Trent</option>    
+                                                                                        <option value="133">Suffolk</option>    
+                                                                                        <option value="103">Sunderland</option>    
+                                                                                        <option value="134">Surrey</option>    
+                                                                                        <option value="70">Sutton</option>    
+                                                                                        <option value="199">Swansea</option>    
+                                                                                        <option value="200">Swindon</option>    
+                                                                                        <option value="104">Tameside</option>    
+                                                                                        <option value="201">Telford and Wrekin</option>    
+                                                                                        <option value="202">Thurrock</option>    
+                                                                                        <option value="203">Torbay</option>    
+                                                                                        <option value="204">Torfaen</option>    
+                                                                                        <option value="71">Tower Hamlets</option>    
+                                                                                        <option value="105">Trafford</option>    
+                                                                                        <option value="205">Vale of Glamorgan</option>    
+                                                                                        <option value="106">Wakefield</option>    
+                                                                                        <option value="107">Walsall</option>    
+                                                                                        <option value="72">Waltham Forest</option>    
+                                                                                        <option value="73">Wandsworth</option>    
+                                                                                        <option value="206">Warrington</option>    
+                                                                                        <option value="135">Warwickshire</option>    
+                                                                                        <option value="207">West Berkshire</option>    
+                                                                                        <option value="32">West Dunbartonshire</option>    
+                                                                                        <option value="33">West Lothian</option>    
+                                                                                        <option value="136">West Sussex</option>    
+                                                                                        <option value="74">Westminster</option>    
+                                                                                        <option value="108">Wigan</option>    
+                                                                                        <option value="208">Wiltshire</option>    
+                                                                                        <option value="209">Windsor and Maidenhead</option>    
+                                                                                        <option value="109">Wirral</option>    
+                                                                                        <option value="210">Wokingham</option>    
+                                                                                        <option value="110">Wolverhampton</option>    
+                                                                                        <option value="137">Worcestershire</option>    
+                                                                                        <option value="211">Wrexham</option>    
+                                                                                        <option value="212">York</option>    
+                                                     
+                                              </select>  </div> 
+                                        </div>
+                
+                
+                                      </div>
+                
+                                      <div class="row">
+                
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label for="country" class="form-label req">Country</label>
+                                                <input type="text" class="form-control" id="country" name="country"  required="">
+                                            </div> 
+                                        </div>
+                
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label for="post_code" class="form-label req">Postcode</label>
+                                                <input type="text" class="form-control" id="post_code" name="post_code"  required="">
+                                            </div> 
+                                        </div>
+                
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label for="email" class="form-label req">Email</label>
+                                                <input type="email" class="form-control" id="email" name="email"  required="">
+                                            </div> 
+                                        </div>
+                
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label for="password" class="form-label">Password</label>
+                                                <div class="input-group">
+                                                <input type="password" class="form-control" id="password" name="password" minlength="6">
+                                                <button class="btn btn-secondary" id="toggle-password" type="button" style="background:#d95a6f;">
+                                                    <i id="password-icon" class="fas fa-eye-slash"></i> 
+                                                  </button>    
+                                            </div>
+                                           
+                                            </div> 
+                                        </div>
+                
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label for="mobile" class="form-label ">Mobile</label>
+                                                <input type="text" class="form-control" id="mobile" name="mobile" required="">
+                                            </div> 
+                                        </div>
+                
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label for="license" class="form-label">License</label>
+                                                <input type="file" class="form-control" id="license" name="license">
+                                            </div> 
+                                                                     
+                                                                    </div>
+                
+                
+                                      </div>
+                
+                
+                                      <div class="row">
+                
+                                        <div class="col-12 float-end">
+                                            <button type="submit" class="btn btn-primary float-end">Submit</button>
+                
+                                        </div>
+                
+                                      </div>
+                                   
+                                     
+                                    
+                                </form>
+                            </div><!--//card-body-->
+                            
+                        </div><!--//card-->
+                    </div>
+                </div>
+                
+                                
+                            </div>
+          <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+      </div>
+      <!-- end main content-->
+    </div>
+    <!-- END layout-wrapper -->
+
+    <!-- Right Sidebar -->
+    <div class="right-bar">
+      <div data-simplebar class="h-100">
+        <div class="rightbar-title d-flex align-items-center px-3 py-4">
+          <h5 class="m-0 me-2">Settings</h5>
+
+          <a href="javascript:void(0);" class="right-bar-toggle ms-auto">
+            <i class="mdi mdi-close noti-icon"></i>
+          </a>
+        </div>
+
+        <!-- Settings -->
+        <hr class="mt-0" />
+
+        <div class="px-4 py-2">
+          <h6 class="mb-3">Select Custome Colors</h6>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input theme-color"
+              type="radio"
+              name="theme-mode"
+              id="theme-default"
+              value="default"
+              onchange="document.documentElement.setAttribute('data-theme-mode', 'default')"
+              checked />
+            <label class="form-check-label" for="theme-default">Default</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input theme-color"
+              type="radio"
+              name="theme-mode"
+              id="theme-red"
+              value="red"
+              onchange="document.documentElement.setAttribute('data-theme-mode', 'red')" />
+            <label class="form-check-label" for="theme-red">Red</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input theme-color"
+              type="radio"
+              name="theme-mode"
+              id="theme-teal"
+              value="teal"
+              onchange="document.documentElement.setAttribute('data-theme-mode', 'teal')" />
+            <label class="form-check-label" for="theme-teal">Teal</label>
+          </div>
+        </div>
+
+        <h6 class="text-center mb-0 mt-3">Choose Layouts</h6>
+
+        <div class="p-4">
+          <div class="mb-2">
+            <img
+              src="assets/images/layouts/layout-1.jpg"
+              class="img-thumbnail"
+              alt="" />
+          </div>
+          <div class="form-check form-switch mb-3">
+            <input
+              type="checkbox"
+              class="form-check-input theme-choice"
+              id="light-mode-switch"
+              checked />
+            <label class="form-check-label" for="light-mode-switch"
+              >Light Mode</label
+            >
+          </div>
+
+          <div class="mb-2">
+            <img
+              src="assets/images/layouts/layout-2.jpg"
+              class="img-thumbnail"
+              alt="" />
+          </div>
+          <div class="form-check form-switch mb-3">
+            <input
+              type="checkbox"
+              class="form-check-input theme-choice"
+              id="dark-mode-switch"
+              data-bsStyle="assets/css/bootstrap-dark.min.css"
+              data-appStyle="assets/css/dark.min.html" />
+            <label class="form-check-label" for="dark-mode-switch"
+              >Dark Mode</label
+            >
+          </div>
+
+          <div class="mb-2">
+            <img
+              src="assets/images/layouts/layout-3.jpg"
+              class="img-thumbnail"
+              alt="" />
+          </div>
+          <div class="form-check form-switch mb-5">
+            <input
+              type="checkbox"
+              class="form-check-input theme-choice"
+              id="rtl-mode-switch"
+              data-appStyle="assets/css/rtl.min.css" />
+            <label class="form-check-label" for="rtl-mode-switch"
+              >RTL Mode</label
+            >
+          </div>
+        </div>
+      </div>
+      <!-- end slimscroll-menu-->
+    </div>
+    <!-- /Right-bar -->
+
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay"></div>
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="assets/js/pages/popper.min.js"></script>
+    <script src="assets/js/pages/bootstrap.min.js"></script>
+     <script src="assets/libs/metismenu/metisMenu.min.js"></script>do
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script src="assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
+
+    <!--Morris Chart-->
+    <script src="assets/libs/morris.js/morris.min.js"></script>
+    <script src="assets/libs/raphael/raphael.min.js"></script>
+
+    <script src="assets/js/pages/dashboard.init.js"></script>
+  <script src="assets/js/pages/select2.js"></script>
+
+    <script src="assets/js/app.js"></script>
+    <script>
+        let input=document.getElementById('password')
+        let eye=document.getElementById("password-icon")
+        eye.addEventListener('click',()=>{
+            if(input.type==="password"){
+                input.type="text";
+                eye.classList.remove("fa-eye-slash");
+                eye.classList.add("fa-eye");
+
+            }
+            else{
+                input.type="password";
+                eye.classList.remove("fa-eye");
+                eye.classList.add("fa-eye-slash");
+             
+
+            }
+        })
+    </script>
+    
+  </body>
+
+</html>
