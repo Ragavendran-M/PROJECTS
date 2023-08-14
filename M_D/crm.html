@@ -20,18 +20,16 @@
       type="text/css" />
     <!-- Icons Css -->
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-    <!-- select2 css -->
-    <link rel="stylesheet" href="assets/css/select2.css" />
     <!-- App Css-->
     <link
       href="assets/css/app.min.css"
-      id="style"
+      id="app-style"
       rel="stylesheet"
       type="text/css" />
   </head>
 
   <body data-sidebar="dark">
- <!-- loader -->
+     <!-- loader -->
  <div id="preloader" >
   <div id="status" >
       <div class="spinner-chase">
@@ -44,6 +42,8 @@
       </div>
   </div>
 </div>
+  
+
     <!-- Begin page -->
     <div id="layout-wrapper">
       <header id="page-topbar">
@@ -424,147 +424,367 @@
       <!-- ============================================================== -->
       <div class="main-content">
         <div class="page-content">
-          <div class="container-fluid">
-            <div
-              class="row g-3 mb-4 align-items-center justify-content-between">
-              <div class="col-auto">
-                <h3 class="page-title mb-0 text-primary">Update Vehicle</h3>
-              </div>
-              <div class="col-auto">
-                <a href="vehical.html" class="btn btn-primary">Vehicles List</a>
-                <a href="vehical.html" class="btn btn-primary">Back</a>
-              </div>
-          
-            </div>
-
-            <div class="row g-4">
-              <div class="col-12">
-                <div class="card card-settings shadow-sm p-4">
-                  <div class="card-body">
-                    <form
-                      class="settings-form"
-                      method="POST"
-                      action="#"
-                      enctype="multipart/form-data">
-                 
-                      <input type="hidden" name="_method" value="PUT" />
-                      <div class="row">
-                        <div class="col-6">
-                          <div class="mb-3">
-                            <label for="number_plate" class="form-label req"
-                              >Vehicle Number</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="number_plate"
-                              name="number_plate"
-                              value="EZ65 BYV"
-                              required="" />
-                          </div>
-                        </div>
-
-                        <div class="col-6">
-                          <div class="mb-3">
-                            <label for="vehicle_model" class="form-label req"
-                              >Model</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="vehicle_model"
-                              name="vehicle_model"
-                              value="sport"
-                              required="" />
-                          </div>
-                        </div>
-
-                        <div class="col-6">
-                          <div class="mb-3">
-                            <label for="vehicle_type" class="form-label req"
-                              >Vehicle Type</label
-                            >
-                            <select
-                              class="form-control"
-                              id="vehicle_type"
-                              name="vehicle_type"
-                              required="">
-                              <option value="">Select</option>
-                              <option value="Van">Van</option>
-                              <option value="Truck">Truck</option>
-                              <option value="Car" selected="selected">
-                                Car
-                              </option>
-                            </select>
-                          </div>
-                        </div>
-
-                        <div class="col-6">
-                          <div class="mb-3">
-                            <label for="mileage" class="form-label req"
-                              >Mileage</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="mileage"
-                              name="mileage"
-                              value="50000"
-                              required="" />
-                          </div>
-                        </div>
-
-                        <div class="col-6">
-                          <div class="mb-3">
-                            <label for="vehicle_make" class="form-label req"
-                              >Make</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="vehicle_make"
-                              name="vehicle_make"
-                              value="Range Rover"
-                              required="" />
-                          </div>
-                        </div>
-
-                        <div class="col-6">
-                          <div class="mb-3">
-                            <label
-                              for="last_service_date"
-                              class="form-label req"
-                              >Last Service Date</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control datepicker"
-                              id="last_service_date"
-                              name="last_service_date"
-                              value="22-06-2022"
-                              required="" />
-                          </div>
-                        </div>
+        
+            <section class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                      <div class="page-title-box">
+                        <h4 class="fw-bold text-primary">CRM</h4>
                       </div>
-
-                      <div class="row">
-                        <div class="col-12 float-end">
-                          <button
-                            type="submit"
-                            class="btn btn-primary float-end">
-                            Update
-                          </button>
-                        </div>
-                      </div>
-                    </form>
+                    </div>
                   </div>
-                  <!--//card-body-->
+                    <!-- start page title -->
+           
+                <div class="row ">
+                   
+                    <div class="col-xl-3 col-sm-6 d-flex">
+                      <div class="card mini-stat bg-primary flex-fill                                                                                                                                                                                                                                                   m,jummmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmnjnjnnnnnnnnnnnnnnnnnnnnnnnnnnnn">
+                        <div class="card-body mini-stat-img">
+                          <div class="mini-stat-icon">
+                            <i class="fas fa-clipboard-check float-end"></i>
+                          </div>
+                          <div class="text-white">
+                            <h6 class="text-uppercase mb-3 font-size-16 text-white">
+                              Estimators
+                            </h6>
+                            <h2 class="mb-4 text-white">2</h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 d-flex">
+                      <div class="card mini-stat bg-primary flex-fill                                                                                                                                                                                                                                                   m,jummmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmnjnjnnnnnnnnnnnnnnnnnnnnnnnnnnnn">
+                        <div class="card-body mini-stat-img">
+                          <div class="mini-stat-icon">
+                            <i class="fas fa-calculator float-end"></i>
+                          </div>
+                          <div class="text-white">
+                            <h6 class="text-uppercase mb-3 font-size-16 text-white">
+                              Contractors
+                            </h6>
+                            <h2 class="mb-4 text-white">2</h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 d-flex">
+                      <div class="card mini-stat bg-primary flex-fill                                                                                                                                                                                                                                                   m,jummmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmnjnjnnnnnnnnnnnnnnnnnnnnnnnnnnnn">
+                        <div class="card-body mini-stat-img">
+                          <div class="mini-stat-icon">
+                            <i class="fas fa-car-crash float-end"></i>
+                          </div>
+                          <div class="text-white">
+                            <h6 class="text-uppercase mb-3 font-size-16 text-white">
+                              Engineering
+                            </h6>
+                            <h2 class="mb-4 text-white">2</h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 d-flex">
+                      <div class="card mini-stat bg-primary flex-fill                                                                                                                                                                                                                                                   m,jummmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmnjnjnnnnnnnnnnnnnnnnnnnnnnnnnnnn">
+                        <div class="card-body mini-stat-img">
+                          <div class="mini-stat-icon">
+                            <i class="fas fa-clipboard-list float-end"></i>
+                          </div>
+                          <div class="text-white">
+                            <h6 class="text-uppercase mb-3 font-size-16 text-white">
+                            Commerical team
+                            </h6>
+                            <h2 class="mb-4 text-white">2</h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 d-flex">
+                      <div class="card mini-stat bg-primary flex-fill                                                                                                                                                                                                                                                   m,jummmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmnjnjnnnnnnnnnnnnnnnnnnnnnnnnnnnn">
+                        <div class="card-body mini-stat-img">
+                          <div class="mini-stat-icon">
+                            <i class="fas fa-clipboard-list float-end"></i>
+                          </div>
+                          <div class="text-white">
+                            <h6 class="text-uppercase mb-3 font-size-16 text-white">
+                            Procurement team
+                            </h6>
+                            <h2 class="mb-4 text-white">2</h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 d-flex">
+                      <div class="card mini-stat bg-primary flex-fill                                                                                                                                                                                                                                                   m,jummmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmnjnjnnnnnnnnnnnnnnnnnnnnnnnnnnnn">
+                        <div class="card-body mini-stat-img">
+                          <div class="mini-stat-icon">
+                            <i class="fas fa-clipboard-list float-end"></i>
+                          </div>
+                          <div class="text-white">
+                            <h6 class="text-uppercase mb-3 font-size-16 text-white">
+                            Project Management
+                            </h6>
+                            <h2 class="mb-4 text-white">2</h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 d-flex">
+                      <div class="card mini-stat bg-primary flex-fill                                                                                                                                                                                                                                                   m,jummmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmnjnjnnnnnnnnnnnnnnnnnnnnnnnnnnnn">
+                        <div class="card-body mini-stat-img">
+                          <div class="mini-stat-icon">
+                            <i class="fas fa-clipboard-list float-end"></i>
+                          </div>
+                          <div class="text-white">
+                            <h6 class="text-uppercase mb-3 font-size-16 text-white">
+                       Vehicle Inspections
+                            </h6>
+                            <h2 class="mb-4 text-white">2</h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 d-flex">
+                      <div class="card mini-stat bg-primary flex-fill                                                                                                                                                                                                                                                   m,jummmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmnjnjnnnnnnnnnnnnnnnnnnnnnnnnnnnn">
+                        <div class="card-body mini-stat-img">
+                          <div class="mini-stat-icon">
+                            <i class="fas fa-clipboard-list float-end"></i>
+                          </div>
+                          <div class="text-white">
+                            <h6 class="text-uppercase mb-3 font-size-16 text-white">
+                     Insurance
+                            </h6>
+                            <h2 class="mb-4 text-white">2</h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              
+               
+             </section>
+          <!-- container-fluid -->
+          <div class="row">
+            <div class="col-12">
+              <h3 class="home-section-title text-primary mb-3">
+              
+              </h3>
+
+              <div class="app-card app-card-orders-table shadow-sm mb-5">
+                <div class="app-card-body">
+                  <div class="table-responsive">
+                    <table
+                      class="reporttable table table-hover mb-0 text-left">
+                      <thead>
+                        <tr class="bg-soft bg-danger text-nowrap text-center">
+                          <th class="cell">S.No</th>
+                          <th class="cell">Report No.</th>
+                          <th class="cell">Driver Name</th>
+                          <th class="cell">Vehicle Number</th>
+                          <th class="cell">Mobile No.</th>
+                          <th class="cell">Next Inspection</th>
+                          <th class="cell">Overdue</th>
+                          <th class="cell">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="cell" align="center">1.</td>
+                          <td class="cell" align="center">MDSCH0027</td>
+                          <td class="cell" align="center">Jim Halpert</td>
+                          <td class="cell" align="center">KZ65 BYV</td>
+                          <td class="cell" align="center">324245577</td>
+                          <td class="cell" align="center">28-07-2023</td>
+                          <td class="cell" align="center">
+                            <button class="btn btn-primary">Yes</button>
+                          </td>
+                          <td align="center" class="cell">
+                            <span data-bs-toggle="tooltip" data-bs-placement="top" title="Submit Remark">
+                            <button
+                              class="btn btn-success"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pendingReview" >
+                              <i class="fas fa-comment-dots"></i>
+                            </button></span>
+                            <span data-bs-toggle="tooltip" data-bs-placement="top" title="Add Inspection">
+                              <a href="Com-AddInspection.html" class="btn btn-success" >
+                                <i class="fas fa-folder-plus"></i>
+                              </a>
+                          </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="cell" align="center">2.</td>
+                          <td class="cell" align="center">MDSCH0026</td>
+                          <td class="cell" align="center">Joey</td>
+                          <td class="cell" align="center">EZ65 BYV</td>
+                          <td class="cell" align="center">623749894</td>
+                          <td class="cell" align="center">28-07-2023</td>
+                          <td class="cell" align="center">
+                            <button class="btn btn-primary">Yes</button>
+                          </td>
+                          <td align="center" class="cell">
+                            <span data-bs-toggle="tooltip" data-bs-placement="top" title="Submit Remark">
+                            <button
+                              class="btn btn-success"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pendingReview" >
+                              <i class="fas fa-comment-dots"></i>
+                            </button></span>
+                            <span data-bs-toggle="tooltip" data-bs-placement="top" title="Add Inspection">
+                              <a href="Com-AddInspection.html" class="btn btn-success" >
+                                <i class="fas fa-folder-plus"></i>
+                              </a>
+                          </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!--//table-responsive-->
+              
+                    </div> <!-- end col -->
                 </div>
-                <!--//card-->
+                  <!-- model -->
+                  <div
+                    class="modal"
+                    id="viewRemarks"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-modal="true"
+                    role="dialog">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5
+                            class="modal-title fw-semibold text-primary"
+                            id="exampleModalLabel">
+                            Remark
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            <div class="col-12 mb-4">
+                              <p style="text-align: left">Test commands</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- modal -->
+                  <div
+                    class="modal"
+                    id="pendingReview"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-modal="true"
+                    role="dialog">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5
+                            class="modal-title fw-semibold text-primary"
+                            id="exampleModalLabel">
+                            Submit Remarks
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form
+                            method="POST"
+                            action="#"
+                            enctype="multipart/form-data">
+                            <div class="row">
+                              <div class="col-12">
+                                <div class="mb-3">
+                                  <label for="comments" class="form-label"
+                                    >Comments</label
+                                  >
+                                  <textarea
+                                    class="form-control"
+                                    name="remarks"
+                                    id="remarks25"
+                                    required=""></textarea>
+                                </div>
+                              </div>
+
+                              <div class="col-12 d-flex justify-content-end">
+                                <button type="submit" class="btn btn-primary">
+                                  Update
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- model end -->
+                </div>
+                <div class="row mt-4">
+                  <div class="col-lg-6">
+                      <div class="card">
+                          <div class="card-body">
+
+                              <h4 class="card-title mb-4">Monthly Report</h4>
+
+                              <div class="row text-center mt-4">
+                                  <div class="col-4">
+                                      <h5 class="mb-0 font-size-20 text-truncate">350</h5>
+                                      <p class="text-muted text-truncate">Total Piling</p>
+                                  </div>
+                                  <div class="col-4">
+                                      <h5 class="mb-0 font-size-20 text-truncate">200</h5>
+                                      <p class="text-muted text-truncate">Pending</p>
+                                  </div>
+                                  <div class="col-4">
+                                      <h5 class="mb-0 font-size-20 text-truncate">5</h5>
+                                      <p class="text-muted text-truncate">Misalign Piling</p>
+                                  </div>
+                              </div>
+<div id="line-chart" class="morris-charts morris-charts-height"></div>
+                           </div></div>
+
+                          </div>
+                      <!-- end col -->
+
+                  <div class="col-lg-6">
+                      <div class="card">
+                          <div class="card-body">
+
+                              <h4 class="card-title mb-4">Weekly Report</h4>
+
+
+                              <div class="row text-center mt-4">
+                                  <div class="col-6">
+                                      <h5 class="mb-0 font-size-20 text-truncate">140</h5>
+                                      <p class="text-muted text-truncate">Total piling</p>
+                                  </div>
+                                  <div class="col-6">
+                                      <h5 class="mb-0 font-size-20 text-truncate">100</h5>
+                                      <p class="text-muted text-truncate">Pending Piling</p>
+                                  </div>
+                              </div>
+
+                              <div id="bar-chart" class="morris-charts morris-charts-height" >
+
+</div></div></div>
+
+                          </div>
+                      </div>
+                <!--//app-card-body-->
               </div>
             </div>
           </div>
-          <!-- container-fluid -->
         </div>
         <!-- End Page-content -->
       </div>
@@ -655,7 +875,7 @@
               class="form-check-input theme-choice"
               id="dark-mode-switch"
               data-bsStyle="assets/css/bootstrap-dark.min.css"
-              data-appStyle="assets/css/dark.min.html" />
+              data-appStyle="assets/css/app-dark.min.html" />
             <label class="form-check-label" for="dark-mode-switch"
               >Dark Mode</label
             >
@@ -672,7 +892,7 @@
               type="checkbox"
               class="form-check-input theme-choice"
               id="rtl-mode-switch"
-              data-appStyle="assets/css/rtl.min.css" />
+              data-appStyle="assets/css/app-rtl.min.css" />
             <label class="form-check-label" for="rtl-mode-switch"
               >RTL Mode</label
             >
@@ -689,22 +909,59 @@
     <!-- JAVASCRIPT -->
     <script src="assets/libs/jquery/jquery.min.js"></script>
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <script src="assets/js/pages/popper.min.js"></script>
-    <script src="assets/js/pages/bootstrap.min.js"></script>
     <script src="assets/libs/metismenu/metisMenu.min.js"></script>
-    do
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
     <script src="assets/libs/node-waves/waves.min.js"></script>
     <script src="assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
-
+    <script src="assets/js/pages/popper.min.js"></script>
+    <script src="assets/js/pages/bootstrap.min.js"></script>
     <!--Morris Chart-->
     <script src="assets/libs/morris.js/morris.min.js"></script>
     <script src="assets/libs/raphael/raphael.min.js"></script>
 
     <script src="assets/js/pages/dashboard.init.js"></script>
-    <script src="assets/js/pages/select2.js"></script>
+ <script>
+  var d=[
+  {Day:"Monday",project:"20piling"},
+  {Day:"Tueday",project:"30piling"},
+  {Day:"Wednesday",project:"40piling"},
+  {Day:"thursday",project:"10piling"},
+  {Day:"Friday",project:"40piling"},
+]
+
+new Morris.Bar({
+  element:'bar-chart',
+  data:d,
+  xkey:'Day',
+  ykeys:['project'],
+  labels:["Piling"],
+  barColors:['#db6377']
+});
+new Morris.Line({
+  // ID of the element in which to draw the chart.
+  element: 'line-chart',
+  // Chart data records -- each entry in this array corresponds to a point on
+  // the chart.
+  data: [
+    { week: "week1", piling: 100 },
+    { week: "week2", piling: 120 },
+    { week: "week3", piling: 80 },
+    { week: "week4", piling: 50 },
+    
+  ],
+  // The name of the data record attribute that contains x-pilings.
+  xkey: 'week',
+  // A list of names of data record attributes that contain y-pilings.
+  ykeys: ['piling'],
+  // Labels for the ykeys -- will be displayed when you hover over the
+  // chart.
+  labels: ['Piling'],
+  parseTime:false
+});
+ </script>
 
     <script src="assets/js/app.js"></script>
+    
   </body>
+
 </html>

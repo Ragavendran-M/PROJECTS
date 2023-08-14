@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" data-theme-mode="red">
+  <!-- Mirrored from themesbrand.com/lexa/layouts/index-red.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jul 2023 06:56:40 GMT -->
   <head>
     <meta charset="utf-8" />
     <title>M&D Foundations</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- 
+   
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets/images/m&Dfavicon.png" />
 
@@ -17,7 +18,7 @@
     <!-- Icons Css -->
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- App Css-->
-    <link rel="stylesheet" href="assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="assets/css/select2.css">
     <link
       href="assets/css/app.min.css"
       id="style"
@@ -26,19 +27,19 @@
   </head>
 
   <body data-sidebar="dark">
-    <!-- loader -->
-    <div id="preloader" >
-        <div id="status" >
-            <div class="spinner-chase">
-                <div class="chase-dot"></div>
-                <div class="chase-dot"></div>
-                <div class="chase-dot"></div>
-                <div class="chase-dot"></div>
-                <div class="chase-dot"></div>
-                <div class="chase-dot"></div>
-            </div>
+ <!-- loader -->
+ <div id="preloader" >
+    <div id="status" >
+        <div class="spinner-chase">
+            <div class="chase-dot"></div>
+            <div class="chase-dot"></div>
+            <div class="chase-dot"></div>
+            <div class="chase-dot"></div>
+            <div class="chase-dot"></div>
+            <div class="chase-dot"></div>
         </div>
     </div>
+</div>
     <!-- Begin page -->
     <div id="layout-wrapper">
         <header id="page-topbar">
@@ -419,146 +420,7 @@
       <!-- ============================================================== -->
       <div class="main-content">
         <div class="page-content">
-            <div class="container-fluid">
-			    
-			   
-                <div class="row g-3 mb-4 align-items-center justify-content-between">
-                    <div class="col-auto">
-                        <h3 class="page-title mb-0 text-primary">Archived Incidents</h3>
-                    </div>
-                
-                    <div class="col-auto">
-                       <form method="POST" action="#">
-                        <div class="row">
-                
-                            <div class="col-5">
-                                <input type="text" class="form-control" name="name_plate" id="name_plate" placeholder="Search" fdprocessedid="e4uhi">
-                            </div>
-                
-                            <div class="col-4">
-                                <input type="text" class="form-control monthpicker" name="month_year" id="month_year" placeholder="Month - Year" fdprocessedid="nou59q">
-                            </div>
-                
-                            <div class="col-3">
-                                <button type="submit" class="btn btn-info"><i class="fas fa-filter"></i></button>
-                                <a href="" class="btn btn-success"><i class="mdi mdi-autorenew"></i></a>
-                   
-                            </div>
-                
-                        </div>
-                    </form> 
-                    </div>
-                     
-                </div>
-                
-                <div class="card card-orders-table shadow-sm mb-5">
-                    <div>
-                
-                      
-                
-                        <div class="table-responsive text-center">
-                            <table class="reporttable table app-table-hover mb-0 text-left">
-                                <thead class="bg-soft bg-danger text-nowrap text-center ">
-                                    <tr>
-                                        <th class="cell">S.No</th>
-                                        <th class="cell">Ref. ID</th>
-                                        <th class="cell">Driver Name</th>
-                                        <th class="cell">Vehicle Number</th>
-                                        <th class="cell">Date</th>
-                                        <th class="cell">Location</th>
-                                        <th class="cell">Statement</th>
-                                        <th class="cell">Image</th>
-                                        <th class="cell">Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                                        <tr>
-                                        <td class="cell" align="center">1. </td>
-                                        <td class="cell" align="center">INREP000010  </td>
-                                        <td class="cell" align="center">Jim Halpert</td>
-                                        <td class="cell" align="center">KZ65 BYV</td>
-                                        <td class="cell" align="center">26-07-2023</td>
-                                        <td class="cell" align="center">67 Sessame street</td>
-                                        <td class="cell" align="center">
-                                                                        Dwight rear end ... <br>
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#statement17">View</a>
-                                            <!-- Modal -->
-                <div class="modal fade" id="statement17" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Incident Statement</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                        
-                            <p>Dwight rear ended me</p>
-                
-                        </div>
-                        
-                      </div>
-                    </div>
-                  </div>                             
-                                             </td>
-                                        <td class="cell" align="center">
-                                                                        <a href="ReportIncident.html"><img src="assets/images/small/img-1.jpg" style="max-width: 60px;"></a>
-                                                                    </td>
-                                        <td class="cell" align="center">
-                                            <a href="#" class="btn btn-success"><i class="fas fa-eye"></i></a>
-                                        </td>
-                                    </tr>
-                                                        <tr>
-                                        <td class="cell" align="center">2. </td>
-                                        <td class="cell" align="center">INREP000009  </td>
-                                        <td class="cell" align="center">Jim Halpert</td>
-                                        <td class="cell" align="center">KZ65 BYV</td>
-                                        <td class="cell" align="center">25-07-2023</td>
-                                        <td class="cell" align="center">Dennis Drive Doncaster</td>
-                                        <td class="cell" align="center">
-                                                                        Hit garage door
-                                             
-                                             </td>
-                                        <td class="cell" align="center">
-                                                                        <a href="ReportIncident1.html"><img src="assets/images/small/img-2.jpg" style="max-width: 60px;"></a>
-                                                                    </td>
-                                        <td class="cell" align="center">
-                                            <a href="#" class="btn btn-success"><i class="fas fa-eye"></i></a>
-                                        </td>
-                                    </tr>
-                                                        <tr>
-                                        <td class="cell" align="center">3. </td>
-                                        <td class="cell" align="center">INREP000007  </td>
-                                        <td class="cell" align="center">rithi</td>
-                                        <td class="cell" align="center">MT04OMY</td>
-                                        <td class="cell" align="center">21-07-2023</td>
-                                        <td class="cell" align="center">tst</td>
-                                        <td class="cell" align="center">
-                                                                        --
-                                             
-                                             </td>
-                                        <td class="cell" align="center">
-                                                                        <a href="#"><img src="#" style="max-width: 60px;"></a>
-                                                                    </td>
-                                        <td class="cell" align="center">
-                                            <a href="#" class="btn btn-success"><i class="fas fa-eye"></i></a>
-                                        </td>
-                                    </tr>
-                                      
-                                    
-                                     
-                                </tbody>
-                            </table>
-                        </div><!--//table-responsive-->
-                       
-                    </div><!--//card-body-->		
-                </div>
-                
-                <div class="row"> 
-                    <div class="col-12"></div> 
-                </div>
-                
-                                
-                            </div>
+          
         </div>
         <!-- End Page-content -->
       </div>
@@ -572,7 +434,7 @@
         <div class="rightbar-title d-flex align-items-center px-3 py-4">
           <h5 class="m-0 me-2">Settings</h5>
 
-          <a href="#" class="right-bar-toggle ms-auto">
+          <a href="javascript:void(0);" class="right-bar-toggle ms-auto">
             <i class="mdi mdi-close noti-icon"></i>
           </a>
         </div>
@@ -695,11 +557,10 @@
     <script src="assets/libs/raphael/raphael.min.js"></script>
 
     <script src="assets/js/pages/dashboard.init.js"></script>
- <script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-
+    <script src="assets/js/pages/select2.js"></script>
+ 
     <script src="assets/js/app.js"></script>
     
   </body>
 
-  <!-- Mirrored from themesbrand.com/lexa/layouts/index-red.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jul 2023 06:57:10 GMT -->
 </html>
