@@ -41,7 +41,7 @@
             <li class="nav-item"><a href="enquire.html" class="nav-link">ENQUIRES</a></li>
           </ul>
           <form class="form-inline mx-3">
-            <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">SIGN IN</button>
+            <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">SIGN IN</button>
           </form>
         </div>
   
@@ -870,7 +870,7 @@
     <div class="container blog">
       <div class="d-flex justify-content-center ">
         <div>
-          <h4 class="gradient-text ps-4 fw-bold">BLOG</h4>
+          <h4 class="gradient-text ps-4 fw-bold for">BLOG</h4>
           <h4 class="fw-bold pt-3">News Feeds</h4>
         </div>
       </div>
@@ -974,7 +974,7 @@
 </section>
 <!-- sign in modal -->
 
-<div class="modal   fade  " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal   fade  " id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered ">
     <div class="modal-content black-bg">
      <div class="p-3">
@@ -993,10 +993,47 @@
     
     </div>
     </form>
-    
-<p class="text-center py-2">or</p>
+    <div class="d-flex  justify-content-between align-items-center">
+      <div class="line"></div>
+<p class=" py-2">or</p>
+<div class="line"></div>
+</div>
 <button class="bg-dark gradient-border px-4 py-2 text-white w-100 btn"><img src="asset/img/google.png" alt=""> <span class="ps-3">CONTINUE WITH GOOGLE</span> <i class="fas fa-arrow-right ps-5"></i></button>
-<p class="text-center pt-4">DON'T HAVE AN ACCOUNT? <span class="gradient-text">SIGN UP </span> </p>
+<p class="text-center pt-4">DON'T HAVE AN ACCOUNT? <a href="#" class="gradient-text" data-bs-toggle="modal" data-bs-target="#staticBackdrop">SIGN UP </a> </p>
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+<!-- sign up modal -->
+<div class="modal   fade  " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered ">
+    <div class="modal-content black-bg">
+     <div class="p-3">
+      <a type="button"  data-bs-dismiss="modal" aria-label="Close"><i class="fa-regular fa-circle-xmark fa-2x"></i></a>
+    </div>
+      <div class="modal-body">
+      <h2 class="fw-bold">Create your free account on DSol EduConnect</h2>
+      <form action="#" method="#">
+<div class="row g-3">
+  <div class="col-12">
+      <input type="text" class=" form-control gradient-border " placeholder="Enter your name...">
+    </div>
+  <div class="col-12">
+      <input type="email" class=" form-control gradient-border " placeholder="Enter your email...">
+    </div>
+  <div class="col-12">
+      <input type="tel" class=" form-control gradient-border " placeholder="Enter your number...">
+    </div>
+    <div class="col-12 ">
+      <button type="button " class="btn gradient-bg gradient-border w-100 " >START FOR FREE</button>
+      </div>
+    
+    </div>
+    </form>
+    
+<p class="text-center pt-4">ALREADY A MEMBER? <a href="#" class="gradient-text"  data-bs-toggle="modal" data-bs-target="#staticBackdrop1"> SIGN IN </a></p>
       </div>
     
     </div>
