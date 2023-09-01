@@ -33,7 +33,7 @@ const swiper = new Swiper('.swiper', {
 const swiper1 = new Swiper('.swiper1', {
     // Default parameters
     slidesPerView: 1,
-    spaceBetween: 100,
+    spaceBetween: 200,
     autoplay:{
         delay:3500,
    
