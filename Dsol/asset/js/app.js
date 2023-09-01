@@ -1,3 +1,7 @@
+
+
+AOS.init();
+
 const swiper = new Swiper('.swiper', {
     // Default parameters
     slidesPerView: 3,
