@@ -115,6 +115,9 @@ body {
   outline: 0;
   box-shadow:none !important;
 }
+.dropdown{
+z-index: 99 !important;
+}
 .gradient-text {
   display: inline;
   background: linear-gradient(269.24deg, var(--theme1) 0%, var(--theme2) 100%);
@@ -257,8 +260,10 @@ nav {
   padding: 10px !important;
   transition: all 0.3s ease;
 }
+
+
 a.nav-link:hover,
-a.nav-link.active {
+a.nav-link.active{
   /* display: inline; */
   background: linear-gradient(269.24deg, #0096ff 0%, #981efe 99.67%);
 
@@ -266,6 +271,31 @@ a.nav-link.active {
   -webkit-background-clip: text;
   text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
+}
+.dropdown .dropdown-menu{
+  display: none;
+}
+.dropdown:hover > .dropdown-menu ,.dropend:hover > .dropdown-menu {
+  display: block !important;
+  margin-left: .125rem;
+  background-color:#000;
+  /* box-shadow: 5px 5px 5px #000; */
+  z-index:9999 !important;
+  color: var(--white);
+}
+.dropend:hover > .dropdown-menu{
+  position: absolute;
+  top:0;
+  left: 100%;
+  margin-left: .4rem;
+}
+.nav1:hover,.dropdown-item{
+  color: var(--white) !important;
+}
+.dropdown-item:hover{
+  border-radius: 10px;
+  background: linear-gradient(269.24deg, #0096ff 0%, #981efe 99.67%);
+
 }
 
 .img {
@@ -726,4 +756,14 @@ text-align: right;
       .connector{
         left: 5%;
       }
+    }
+    @media screen and (min-width:769px){
+      .dropend:hover > .dropdown-menu {
+
+        position: absolute;
+        top: 0;
+        left: 100%;
+        margin-left: .125em;
+      }
+
     }
