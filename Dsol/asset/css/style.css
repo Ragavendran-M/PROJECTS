@@ -409,28 +409,7 @@ section {
   color: var(--white);
   /* animation:bg-animate 4s infinite  ; */
 }
-/* @keyframes bg-animate{
-  0%{
-    background-image: radial-gradient(at top right, var(--theme1 ) 0%, var(--theme2 ) 100%);
 
-  }
-  25%{
-    background-image: radial-gradient(at top right, var(--theme2 ) 0%, var(--theme1 ) 100%);
-
-  }
-  50%{
-    background-image: radial-gradient(at top right, var(--theme1 ) 0%, var(--theme2 ) 100%);
-
-  }
-  75%{
-    background-image: radial-gradient(at top right, var(--theme2 ) 0%, var(--theme1 ) 100%);
-
-  }
-  100%{
-    background-image: radial-gradient(at top right, var(--theme1 ) 0%, var(--theme2 ) 100%);
-
-  }
-} */
 
 .card-overlayer {
   padding: 10px;
@@ -722,10 +701,7 @@ text-align: right;
   background: #fff;
 
 }
-/* .accordion,.accordion-item{
-  background-color: #000 !important;
-  color: white !important;
-} */
+
 .accordion {
 --bs-accordion-color: var(--white) !important;
     --bs-accordion-bg: var(--black) !important;}
@@ -733,8 +709,75 @@ text-align: right;
       color: var(--white) !important;
       --bs-accordion-btn-active-icon: url(../img/arrow-up.png) !important;
     }
+.test-ol li{
+padding: 10px;
+font-size: 10px;
+}
 
+.test-ol li::marker{
+  color:var(--theme1);
+}
+svg:hover{
+  cursor: pointer ;
 
+}
+svg:hover circle{
+  transition:all 0.5s ease;
+  fill:url(#gradient)!important;
+}
+svg:hover path{
+  transition:all 0.2s ease;
+  fill:white
+}
+.page nav{
+  border-bottom: none !important;
+}
+.pagination .page-item {
+
+margin-right: 5px;
+
+}
+.page-item .page-link
+{
+  width: 50px !important;
+  height: 50px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50% !important;
+  background-color: transparent;
+  border: none !important;
+  color: #fff !important;
+  transition: all .5s ease;
+
+}
+.page-item .page-link:hover ,.page-item .page-link.active{
+
+  background: linear-gradient(260.91deg, var(--theme1) 0%, var(--theme2) 100%),
+  linear-gradient(260.91deg, var(--theme1) 0%, var(--theme2) 100%);
+color: white;
+ 
+}
+.btn-wrapper{
+position: relative;
+}
+.cir-arrow{
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+  position: absolute;
+  right: 5%;
+  top: 10%;
+}
+.box{
+  border: 1px solid #FFFFFF;
+
+}
     @media (min-width:200px) and (max-width:420px)  {
       .connector{
         left: 8%;
