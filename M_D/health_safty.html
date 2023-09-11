@@ -299,24 +299,46 @@
                     </a>
                   </li>
     
+                
                   <li>
-                    <a href="users.html" class="waves-effect">
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
                       <i class="mdi mdi-account-supervisor-outline"></i>
-                      <span>Employee</span>
+                      <span>HRM</span>
                     </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                      <li>
+                        <a href="employee.html">Employee Details</a>
+                      </li>
+                      <li><a href=""> Insurance</a></li>
+                      <li><a href="">User Admin</a></li>
+                    </ul>
                   </li>
+                
                   <li>
-                    <a href="vehical.html" class="waves-effect">
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
                       <i class="ion ion-ios-car"></i>
-                      <span>Vehicles</span>
+                      <span>Vehicles Mapping</span>
                     </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                      <li>
+                        <a href="vehical.html">Vehicle</a>
+                      </li>
+                      <li><a href="vehicle_assign.html">Vehicle Assign</a></li>
+                      <li><a href="reportedIncidents.html">reportedIncident</a></li>
+                      <li><a a href="javascript: void(0);" class="has-arrow waves-effect">Vehicle Inspection</a>
+                        <ul class="sub-menu" aria-expanded="false">
+                          <li>
+                            <a href="CompletedInspection.html" class="text-nowrap">Completed Inspection</a>
+                          </li>
+                          <li>
+                            <a href="pendingInspection.html">Pending Inspection</a>
+                          </li>
+                          <li><a href="MissedInspiction.html">Missed Inspection</a></li>
+                      </ul>
+                      </li>
+                    </ul>
                   </li>
-                  <li>
-                    <a href="vehicle_assign.html" class="waves-effect">
-                      <i class="mdi mdi-account-arrow-left-outline"></i>
-                      <span>Vehicle Assign</span>
-                    </a>
-                  </li>
+                 
                   <li >
                     <a href="kanban-board.html" class="waves-effect">
                         <i class="mdi mdi-billboard"></i>
@@ -326,34 +348,62 @@
                 </li>
                   <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
-                      <i class="mdi mdi-briefcase"></i>
-                      <span>Project</span>
+                      <i class="mdi mdi-console-network"></i>
+                      <span>Task Management</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
                       <li>
-                        <a href="planning.html">Planning</a>
+                        <a href="#">Piling</a>
                       </li>
                       <li>
-                        <a href="workprogess.html">Work Progress</a>
+                        <a href="">Installed Piling</a>
+                      </li>
+                      <li>
+                        <a href="#">Site Work</a>
                       </li>
                   
                     </ul>
                   </li>
                   <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
-                      <i class="mdi mdi-check-decagram"></i>
-                      <span>Inspection</span>
+                      <i class="mdi mdi-briefcase"></i>
+                      <span>Project Management</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
                       <li>
-                        <a href="CompletedInspection.html">Completed Inspection</a>
+                        <a href="planning.html">Project </a>
                       </li>
                       <li>
-                        <a href="pendingInspection.html">Pending Inspection</a>
+                        <a href="workprogess.html">Clients</a>
                       </li>
-                      <li><a href="MissedInspiction.html">Missed Inspection</a></li>
+                      <li>
+                        <a href="#">Tender</a>
+                      </li>
+                  
                     </ul>
                   </li>
+                  <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                      <i class="mdi mdi-account-group-outline"></i>
+                      <span>Crew Mapping</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                      <li>
+                        <a href="">CFA</a>
+                      </li>
+                      <li>
+                        <a href="">RC</a>
+                      </li>
+                      <li>
+                        <a href="">Foreman</a>
+                      </li>
+                      <li>
+                        <a href="">TopDriven</a>
+                      </li>
+                  
+                    </ul>
+                  </li>
+                
     
                   <li>
                     <a href="reportedIncidents.html" class="waves-effect">
@@ -380,12 +430,7 @@
                         <span>Chat</span>
                     </a>
                 </li>
-                  <li>
-                    <a href="crew.html" class="waves-effect">
-                        <i class="mdi mdi-account-group"></i>
-                        <span>Crew</span>
-                    </a>
-                </li>
+                 
                 <li>
                     <a href="master-data.html" class="waves-effect">
                         <i class="mdi mdi-database-check"></i>
@@ -422,264 +467,51 @@
       <!-- ============================================================== -->
       <div class="main-content">
         <div class="page-content">
-            <div class="container-fluid">
-			    
-			   
-                <div class="row g-3 mb-4 align-items-center justify-content-between">
-                    <div class="col-auto">
-                        <h3 class="page-title mb-0 text-primary">Users</h3>
-                    </div>
-                    <div class="col-auto">
-                         <a href="add_user.html" class="btn btn-primary"><i class="fas fa-plus"></i>  Add User</a>
-                    </div>
-                </div>
-                
-                
-                
-                <div class="row g-4 mb-4"> 
-                    <div class="col-12">
-                        <div class="card  shadow-sm p-4"> 
-                            <div class="card-body">
-                                <form method="POST" action="#" >
-                                <div class="row">
-                
-                                    <div class="col-3"> 
-                                        <select id="role" name="role" class="form-control">
-                                            <option value="">Role</option>
-                                            <option value="admin">Admin</option>
-                                            <option value="driver">Driver</option>
-                                        </select> 
-                                </div>
-                
-                                <div class="col-3"> 
-                                    <input  class="form-control datepicker" id="creation_date" name="creation_date" placeholder="Creation Date">
-                                </div>
-                
-                                    <div class="col-4"> 
-                                        <input type="text" class="form-control" id="name_email" name="name_email" placeholder="Name / Email / Mobile No.">
-                                    </div> 
-                                    
-                
-                                    <div class="col-2">
-                                        <button type="submit" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Filter">
-                                          <i class="fas fa-filter"></i> </button>
-                
-                                        <a href="#" class="btn btn-success"  data-bs-toggle="tooltip" data-bs-placement="top" title="Reset">
-                                        <i class="mdi mdi-autorenew  "></i> </a>
-                
-                                    </div>  
-                                </div>
-                            </form>
-                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                <div class="card card-orders-table shadow-sm mb-5">
-                    <div class="">
-                        <div class="table-responsive">
-                            <table class="reporttable table table-hover mb-0 text-left">
-                                <thead class="bg-soft bg-danger text-nowrap text-center">
-                                    <tr>
-                                        <th class="cell">S.No</th>
-                                        <th class="cell">Emp. ID</th>
-                                        <th class="cell">Employee Name</th>
-                                        <th class="cell">Creation Date</th>
-                                        <th class="cell">Role</th>
-                                        <th class="cell">Position</th>
-                                        <th class="cell">Email ID</th>
-                                        <th class="cell">Mobile No.</th>
-                                        <th class="cell">Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                                        <tr>
-                                        <td class="cell" align="center">1.</td>
-                                        <td class="cell" align="center"><a href="user_update.html" class="empid"> MDSTF0011 </a></td>
-                                        <td class="cell" align="center"> Jim Halpert </td>
-                                        <td class="cell text-nowrap" align="center">25-07-2023</td>
-                                        <td class="cell" align="center">Driver</td>
-                                        <td class="cell" align="center">Driver</td>
-                                        <td class="cell" align="center">jim@mdfoundations.com</td>
-                                        <td class="cell" align="center">324245577</td>
-                                        <td class="cell text-nowrap" align="center">
-                                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#userdetails"> 
-                                                <i class="fas fa-eye"></i></button>
-                                            <a href="user_update.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit" class="btn btn-success">
-                                                <i class="fas fa-edit"></i> </a>
-                                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" class="btn btn-primary" title="Delete" >
-                                                <i class="fas fa-trash"></i> </a>
-                                            <!-- Modal -->
-                <div class="modal fade" id="userdetails" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title  text-primary" id="exampleModalLabel">Jim Halpert Details</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                        
-                           
-                             <table class="table ">
-                              <tbody>
-                                <tr>
-                                 <td><b>Name</b></td>
-                                 <td>Jim Halpert</td>
-                                 <td><b>Role</b></td>
-                                 <td>Driver</td>
-                                </tr>
-                                <tr>
-                                    <td><b>Position</b></td>
-                                    <td>Driver</td>
-                                    <td><b>Gender</b></td>
-                                    <td>Male</td>
-                                   </tr>
-                                   <tr>
-                                    <td><b>D.O.B</b></td>
-                                    <td>17-11-1925</td>
-                                    <td><b>Company</b></td>
-                                    <td>M&amp;D foundations</td>
-                                   </tr>
-                                   <tr>
-                                    <td><b>Address</b></td>
-                                    <td>5 Graham Way</td>
-                                    <td><b>City</b></td>
-                                    <td>Ealing</td>
-                                   </tr>
-                                   <tr>
-                                    <td><b>Country</b></td>
-                                    <td>United Kingdom</td>
-                                    <td><b>Postcode</b></td>
-                                    <td>DN7 9KK</td>
-                                   </tr>
-                                   <tr>
-                                    <td><b>Email</b></td>
-                                    <td>jim@mdfoundations.com</td>
-                                    <td><b>Mobile</b></td>
-                                    <td>324245577</td>
-                                   </tr>
-                                   <tr>
-                                    <td><b>License</b></td>
-                                    <td colspan="3">                        <img src="assets/images/directory-bg.jpg" style="max-width: 150px; max-height:150px;">
-                                                           </td>
-                                   </tr>
-                                    
-                              </tbody> 
-                             </table>
-                
-                 
-                
-                        </div>
-                        
-                      </div>
-                    </div>
-                  </div>                       </td>
-                                    </tr>
-                                                        <tr>
-                                        <td class="cell" align="center">2.</td>
-                                        <td class="cell" align="center"><a href="user_update.html" class="empid"> MDSTF0010 </a></td>
-                                        <td class="cell" align="center"> Ross </td>
-                                        <td class="cell text-nowrap" align="center">24-07-2023</td>
-                                        <td class="cell" align="center">Driver</td>
-                                        <td class="cell" align="center">Driver</td>
-                                        <td class="cell" align="center">ross@mdfoundations.com</td>
-                                        <td class="cell" align="center">8797294223</td>
-                                        <td class="cell text-nowrap" align="center">
-                                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#userdetails"> 
-                                                <i class="fas fa-eye"></i></button>
-                                            <a href="user_update.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit" class="btn btn-success">
-                                                <i class="fas fa-edit"></i> </a>
-                                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" class="btn btn-primary" title="Delete" >
-                                                <i class="fas fa-trash"></i> </a> 
-                                </td>
-                                    </tr>
-                                 
-                                      
-                                    
-                                     
-                                </tbody>
-
-                            </table>
-                            <div class="modal fade" id="userdetails" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5 class="modal-title  text-primary" id="exampleModalLabel">Jim Halpert Details</h5>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                    
-                                       
-                                         <table class="table ">
-                                          <tbody>
-                                            <tr>
-                                             <td><b>Name</b></td>
-                                             <td>Jim Halpert</td>
-                                             <td><b>Role</b></td>
-                                             <td>Driver</td>
-                                            </tr>
-                                            <tr>
-                                                <td><b>Position</b></td>
-                                                <td>Driver</td>
-                                                <td><b>Gender</b></td>
-                                                <td>Male</td>
-                                               </tr>
-                                               <tr>
-                                                <td><b>D.O.B</b></td>
-                                                <td>17-11-1925</td>
-                                                <td><b>Company</b></td>
-                                                <td>M&amp;D foundations</td>
-                                               </tr>
-                                               <tr>
-                                                <td><b>Address</b></td>
-                                                <td>5 Graham Way</td>
-                                                <td><b>City</b></td>
-                                                <td>Ealing</td>
-                                               </tr>
-                                               <tr>
-                                                <td><b>Country</b></td>
-                                                <td>United Kingdom</td>
-                                                <td><b>Postcode</b></td>
-                                                <td>DN7 9KK</td>
-                                               </tr>
-                                               <tr>
-                                                <td><b>Email</b></td>
-                                                <td>jim@mdfoundations.com</td>
-                                                <td><b>Mobile</b></td>
-                                                <td>324245577</td>
-                                               </tr>
-                                               <tr>
-                                                <td><b>License</b></td>
-                                                <td colspan="3">                        <img src="assets/images/directory-bg.jpg" style="max-width: 150px; max-height:150px;">
-                                                                       </td>
-                                               </tr>
-                                                
-                                          </tbody> 
-                                         </table>
-                            
-                             
-                            
-                                    </div>
-                                    
-                                  </div>
-                                </div>
-                              </div>  
-                        </div><!--//table-responsive-->
-                
-                        
-                       
-                    </div><!--//card-body-->		
-                </div>
-                
-                
-                <div class="row"> 
-                    <div class="col-12"></div> 
-                </div>
-                
-                                
-                            </div>
+           <div class="container-fluid">
+         
+                <h3 class="page-title text-primary mb-3">Health & Safety</h3>
+            
+            <form action="" >
+              
+               <h6>Are you between 18 to 60?</h6>
+                <input type="radio" name="age" id="y"><label for="y" class="px-2">Yes </label>
+                <input type="radio" name="age" id="n"><label for="n" class="px-2">No</label>
+                <h6>Do you have experience wearing safety equipment and following safety regulations?</h6>
+                <input type="radio" name="wear" id="y"><label for="y" class="px-2">Yes </label>
+                <input type="radio" name="wear" id="n"><label for="n" class="px-2">No</label>
+               <h6>Have you experienced musculoskeletal pain (back, neck, shoulder, etc.) due to your work?</h6>
+                <input type="radio" name="pain" id="y"><label for="y" class="px-2">Yes </label>
+                <input type="radio" name="pain" id="n"><label for="n" class="px-2">No</label>
+    
+               <h6>Do you often work in environments with excessive noise levels without using hearing protection?</h6>
+                <input type="radio" name="noise" id="y"><label for="y" class="px-2">Yes </label>
+                <input type="radio" name="noise" id="n"><label for="n" class="px-2">No</label>
+               <h6>Are you between 18 to 60?</h6>
+                <input type="radio" name="age" id="y"><label for="y" class="px-2">Yes </label>
+                <input type="radio" name="age" id="n"><label for="n" class="px-2">No</label>
+               <h6>Are you between 18 to 60?</h6>
+                <input type="radio" name="age" id="y"><label for="y" class="px-2">Yes </label>
+                <input type="radio" name="age" id="n"><label for="n" class="px-2">No</label>
+               <h6>Are you between 18 to 60?</h6>
+                <input type="radio" name="age" id="y"><label for="y" class="px-2">Yes </label>
+                <input type="radio" name="age" id="n"><label for="n" class="px-2">No</label>
+               <h6>Are you between 18 to 60?</h6>
+                <input type="radio" name="age" id="y"><label for="y" class="px-2">Yes </label>
+                <input type="radio" name="age" id="n"><label for="n" class="px-2">No</label>
+               <h6>Are you between 18 to 60?</h6>
+                <input type="radio" name="age" id="y"><label for="y" class="px-2">Yes </label>
+                <input type="radio" name="age" id="n"><label for="n" class="px-2">No</label>
+               <h6>Are you between 18 to 60?</h6>
+                <input type="radio" name="age" id="y"><label for="y" class="px-2">Yes </label>
+                <input type="radio" name="age" id="n"><label for="n" class="px-2">No</label>
+               <h6>Are you between 18 to 60?</h6>
+                <input type="radio" name="age" id="y"><label for="y" class="px-2">Yes </label>
+                <input type="radio" name="age" id="n"><label for="n" class="px-2">No</label>
+               <h6>Are you between 18 to 60?</h6>
+                <input type="radio" name="age" id="y"><label for="y" class="px-2">Yes </label>
+                <input type="radio" name="age" id="n"><label for="n" class="px-2">No</label>
+            </form>
+           </div>
           <!-- container-fluid -->
         </div>
         <!-- End Page-content -->

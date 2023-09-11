@@ -774,6 +774,12 @@ position: relative;
   right: 5%;
   top: 10%;
 }
+.swiper1{
+  width: 100% !important;
+}
+.body{
+  width: 100% !important;
+}
 .box{
   border: 1px solid #FFFFFF;
 

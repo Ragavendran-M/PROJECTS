@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" data-theme-mode="red">
   <!-- Mirrored from themesbrand.com/lexa/layouts/index-red.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jul 2023 06:56:40 GMT -->
-   <head>
+  <head>
     <meta charset="utf-8" />
     <title>M&D Foundations</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,65 +26,6 @@
       id="app-style"
       rel="stylesheet"
       type="text/css" />
-      <style>
-        body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-}
-
-.container {
-    width: 80%;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input[type="text"],
-input[type="number"],
-textarea,
-input[type="date"],
-input[type="time"],
-select {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-textarea {
-    resize: vertical;
-}
-
-input[type="submit"] {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-input[type="submit"]:hover {
-    background-color: #0056b3;
-}
-
-    </style>
   </head>
 
   <body data-sidebar="dark">
@@ -101,7 +42,7 @@ input[type="submit"]:hover {
       </div>
   </div>
 </div>
- 
+  
 
     <!-- Begin page -->
     <div id="layout-wrapper">
@@ -528,45 +469,249 @@ input[type="submit"]:hover {
       <!-- ============================================================== -->
       <div class="main-content">
         <div class="page-content">
-         <div class="container-fluid">
-            <h2 class="text-primary">Accident Record Form</h2>
-            <div class="card">
-                <div class="card-body">
-            <form action="submit.php" method="post">
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date" required><br>
+  <!-- container-fluid -->
+            <section class="container-fluid">
+           
+                  <div class="row">
+            <div class="col-12">
+                   <!-- start page title -->
+              <h3 class="home-section-title text-primary mb-3">
+                Site Details
+              </h3>
+
+              <div class="app-card app-card-orders-table shadow-sm mb-5">
+                <div class="app-card-body">
+                  <div class="table-responsive">
+                    <table
+                      class="reporttable table table-hover mb-0 text-left">
+                      <thead>
+                        <tr class="bg-soft bg-danger text-nowrap text-center">
+                          <th class="cell">S.No</th>
+                          <th class="cell">Contract Number</th>
+                          <th class="cell">Tender Number</th>
+                          <th class="cell">Project Name</th>
+                          <th class="cell">Project Address</th>
+                          <th class="cell">Assigned Workers</th>
+
+                          <th class="cell">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="cell" align="center">1.</td>
+                          <td class="cell" align="center">C23-103</td>
+                          <td class="cell" align="center">T23001</td>
+                          <td class="cell" align="center">ABC Appartment</td>
+                          <td class="cell" align="center">Doncaster,UK</td>
+                          <td class="cell" align="center">Peterson,Wood,Alex</td>
+                          
+                          <td align="center" class="cell">
+                            <span data-bs-toggle="tooltip" data-bs-placement="top" title="Details">
+                            <button
+                              class="btn btn-success"
+                              data-bs-toggle="modal"
+                              data-bs-target="#viewRemarks" >
+                              <i class="fas fa-eye"></i>
+                            </button></span>
+                            <span data-bs-toggle="tooltip" data-bs-placement="top" title="Engineering Diagram">
+                                <button
+                                class="btn btn-success"
+                                data-bs-toggle="modal"
+                                data-bs-target="#egDiagram" >
+                                <i class="fas fa-drafting-compass"></i>
+                                </button>
+                          </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="cell" align="center">2.</td>
+                          <td class="cell" align="center">C23-104</td>
+                          <td class="cell" align="center">T23002</td>
+                          <td class="cell" align="center">xyz Appartment</td>
+                          <td class="cell" align="center">Cardiff ,UK</td>
+                          <td class="cell" align="center">James,Anderson,Cloark</td>
+                          
+                          <td align="center" class="cell">
+                            <span data-bs-toggle="tooltip" data-bs-placement="top" title="Details">
+                            <button
+                              class="btn btn-success"
+                              data-bs-toggle="modal"
+                              data-bs-target="#viewRemarks" >
+                              <i class="fas fa-eye"></i>
+                            </button></span>
+                            <span data-bs-toggle="tooltip" data-bs-placement="top" title="Engineering Diagram">
+                                <button
+                                class="btn btn-success"
+                                data-bs-toggle="modal"
+                                data-bs-target="#egDiagram" >
+                                <i class="fas fa-drafting-compass"></i>
+                              </button>
+                          </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!--//table-responsive-->
+              
+                    </div> <!-- end col -->
+                </div>
+                  <!-- model -->
+                  <div
+                    class="modal fade"
+                    id="viewRemarks"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-modal="true"
+                    role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                          <h5
+                            class="modal-title fw-semibold text-primary"
+                            id="exampleModalLabel">
+                            Details
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                                    
+                                       
+                            <table class="table ">
+                             <tbody>
+                               <tr>
+                                <td><b>Contract No</b></td>
+                                <td>C23-101</td>
+                                <td><b>Tender No.</b></td>
+                                <td>T23001</td>
+                               </tr>
+                               <tr>
+                                   <td><b>Project Name</b></td>
+                                   <td>ABC Appartments</td>
+                                   <td><b>Project Address</b></td>
+                                   <td>Doncaster ,UK</td>
+                                  </tr>
+                                  <tr>
+                                   <td><b>Assigned Workers</b></td>
+                                   <td>John,Sarath,Mike</td>
+                                   <td><b>Current Status</b></td>
+                                   <td>In Progress</td>
+                                  </tr>
+                                  <tr>
+                                   <td><b>Start Dates</b></td>
+                                   <td>04-07-2023</td>
+                                   <td><b>End Date</b></td>
+                                   <td>09-07-2023</td>
+                                  </tr>
+                                  <tr>
+                                   <td><b>Project Duration</b></td>
+                                   <td>20 days</td>
+                                   <td><b>Client Name</b></td>
+                                   <td>Henry James</td>
+                                  </tr>
+                                  <tr>
+                                   <td><b>Pile Type</b></td>
+                                   <td>Concrete</td>
+                                   <td><b>No of piles</b></td>
+                                   <td>50</td>
+                                  </tr>
+                                  <tr>
+                                   <td><b>No of days piling</b></td>
+                                   <td>4 days</td>
+                                   <td><b>Pile designed length</b></td>
+                                   <td>15 m</td>
+                                  </tr>
+                                  <tr>
+                                   <td><b>Expected Pile Installation rate</b></td>
+                                   <td>20/day</td>
+                                   <td><b>Restrike%10</b></td>
+                                   <td>5</td>
+                                  </tr>
+                                  <tr>
+                                   <td><b>Penetration record</b></td>
+                                   <td>3</td>
+                                   <td><b>Rig Details</b></td>
+                                   <td>SR 30/PM 16</td>
+                                  </tr>
+                                  <tr>
+                                   <td><b>Rig length</b></td>
+                                   <td>12cm</td>
+                                  
+                                  </tr>
+                                
+                                   
+                                
+                                   
+                             </tbody> 
+                            </table>
+               
                 
-                <label for="time">Time:</label>
-                <input type="time" id="time" name="time" required><br>
+               
+                       </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- modal -->
+                  <div
+                    class="modal fade"
+                    id="egDiagram"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-modal="true"
+                    role="dialog">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5
+                            class="modal-title fw-semibold text-primary"
+                            id="exampleModalLabel">
+                       Engineering Diagram
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="card-body shadow-sm m-2 p-4">
+                                <table>
+                                    <tr>
+                                        <td> Planned by JOHN</td>
+                                        <td> ABC Appartments</td>
+                                        <td> 21 JUN 23</td>
+                                    </tr>
+                                    <tr>
+                                        <td> Diagram No:DG003</td>
+                                        <td>  Revision No:Revision A</td>
+                                    
+                                     
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="text-center">
+                         <img src="assets/images/drawing/EG.png" alt="" style="object-fit:cover;"></div>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-primary m-2" data-bs-dismiss="modal"
+                            aria-label="Close">Cancel</button>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <!-- model end -->
+                </div>
+               
                 
-                <label for="location">Location:</label>
-                <input type="text" id="location" name="location" required><br>
-                
-                <label for="description">Description:</label>
-                <textarea id="description" name="description" rows="4" required></textarea><br>
-                
-                <label for="injured">Injured Persons:</label>
-                <input type="number" id="injured" name="injured" min="0" required><br>
-                
-                <label for="witnesses">Witnesse:</label>
-                <input type="number" id="witnesses" name="witnesses" min="0" required><br>
-                
-                <label for="reporter">Reporter:</label>
-                <input type="text" id="reporter" name="reporter" required><br>
-                
-                <label for="Status">Status:</label>
-                <select id="Status" name="status" required>
-                    <option value="Open">Open</option>
-                    <option value="Closed">Closed</option>
-                </select><br>
-                
-                <input type="submit" value="Submit" class="bg-primary">
-            </form>
-        </div>
-    </div>
-    
-         </div>
-          <!-- container-fluid -->
+              </div>
+            </div>
+          </div>
         </div>
         <!-- End Page-content -->
       </div>
@@ -695,13 +840,17 @@ input[type="submit"]:hover {
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
     <script src="assets/libs/node-waves/waves.min.js"></script>
     <script src="assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <script src="assets/js/pages/popper.min.js"></script>
+    <script src="assets/js/pages/bootstrap.min.js"></script>
+    <!--Morris Chart-->
+    <script src="assets/libs/morris.js/morris.min.js"></script>
+    <script src="assets/libs/raphael/raphael.min.js"></script>
 
-    <!-- dragula plugins -->
-    <script src="assets/libs/dragula/dragula.min.js"></script>
-
-    <script src="assets/js/pages/kanbanboard.init.js"></script>
+    <script src="assets/js/pages/dashboard.init.js"></script>
+ 
 
     <script src="assets/js/app.js"></script>
+    
   </body>
 
 </html>

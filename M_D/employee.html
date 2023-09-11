@@ -1,39 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" data-theme-mode="red">
-
-
-<!-- Mirrored from themesbrand.com/lexa/layouts/index-red.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jul 2023 07:12:49 GMT -->
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>M&D Foundations</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      content="Premium Multipurpose Admin & Dashboard Template"
-      name="description" />
-    <meta content="Themesbrand" name="author" />
+   
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets/images/m&Dfavicon.png" />
 
     <!-- Bootstrap Css -->
     <link
       href="assets/css/bootstrap.min.css"
-      id="bootstrap-style"
+  
       rel="stylesheet"
       type="text/css" />
+      <link rel="stylesheet" href="assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
     <!-- Icons Css -->
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- select2 css -->
+    <link rel="stylesheet" href="assets/css/select2.css">
     <!-- App Css-->
     <link
       href="assets/css/app.min.css"
-      id="app-style"
+      id="style"
       rel="stylesheet"
       type="text/css" />
   </head>
 
-
-<body data-sidebar="dark">
-
+  <body data-sidebar="dark">
  <!-- loader -->
  <div id="preloader" >
     <div id="status" >
@@ -49,7 +44,6 @@
 </div>
     <!-- Begin page -->
     <div id="layout-wrapper">
-
         <header id="page-topbar">
             <div class="navbar-header">
               <div class="d-flex">
@@ -466,200 +460,387 @@
               <!-- Sidebar -->
             </div>
           </div>
-        <!-- Left Sidebar End -->
+      <!-- Left Sidebar End -->
 
-
-
-        <div class="main-content">
-            <div class="page-content">
-                <div class="container-fluid">
+      <!-- ============================================================== -->
+      <!-- Start right Content here -->
+      <!-- ============================================================== -->
+      <div class="main-content">
+        <div class="page-content">
+            <div class="container-fluid">
 			    
 			   
-                    <div class="row g-3 mb-4 align-items-center justify-content-between">
-                        <div class="col-auto">
-                            <h3 class="page-title mb-0 text-primary">Incident Details</h3>
-                        </div>
-                        <div class="col-auto">
-                            <a href="reportedIncidents.html" class="btn btn-primary">Reported Incidents</a>
-                       </div><!--//col-auto-->
+                <div class="row g-3 mb-4 align-items-center justify-content-between">
+                    <div class="col-auto">
+                        <h3 class="page-title mb-0 text-primary">Users</h3>
                     </div>
-                    
-                    
-                    <div class="row g-4">
-                         
-                        <div class="col-8">
-                            <div class="card card-settings shadow-sm p-4"> 
-                                <div class="card-body">
-                    
-                                    <div class="row">
-                    
-                                        <div class="col-12">
-                    
-                                            <table class="table">
-                                               <tbody><tr>
-                                                <td class="incidentlable">Ref. No. </td>
-                                                <td> INREP000011</td>
-                                               </tr>
-                                               <tr>
-                                                <td class="incidentlable"> Driver Name </td>
-                                                <td>Kevin</td>
-                                               </tr>
-                                               <tr>
-                                                <td class="incidentlable"> Mobile No. </td>
-                                                <td>0837474</td>
-                                               </tr>
-                                               <tr>
-                                                <td class="incidentlable"> Number Plate </td>
-                                                <td>DE22UYH</td>
-                                               </tr>
-                                               <tr>
-                                                <td class="incidentlable"> Inspection Date </td>
-                                                <td>02-08-2023</td>
-                                               </tr>
-                                               
-                                               <tr>
-                                                <td class="incidentlable"> Statement </td>
-                                                <td>Alex hit me car</td>
-                                               </tr>
-                                               <tr>
-                                                <td class="incidentlable"> Location </td>
-                                                <td>Dennis Drive</td>
-                                               </tr>
-                                               <tr>
-                                                <td class="incidentlable"> Witnessed by </td>
-                                                <td>Alex</td>
-                                               </tr>
-                                                                          <tr>
-                                                <td class="incidentlable"> Images </td>
-                                                <td>
-                                                    <ul class="list-container list-unstyled">
-                                                                                                <li>
-                                                                <a href="assets/images/users/user-1.jpg" data-toggle="lightbox" data-gallery="gallery18">
-                                                                    <img src="assets/images/users/user-1.jpg" class="w-25 h-25" style="max-width: 60px;">
-                                                                     </a>
-                                                            </li>
-                                                        
-                                                    </ul>
-                                                
-                                                </td>
-                                               </tr>
-                    
-                                            </tbody></table>
-                    
-                    
-                                        </div>
-                    
-                                        
-                    
-                                        
-                     
-                     
-                    
-                                        
-                    
-                                       
-                    
-                                    </div>
-                    
-                    
-                                  
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                                   
-                                </div><!--//card-body--> 
-                            </div><!--//card-->
-                        </div>
+                    <div class="col-auto">
+                         <a href="add_user.html" class="btn btn-primary"><i class="fas fa-plus"></i>  Add User</a>
                     </div>
-                    
-                                    
+                </div>
+                
+                
+                
+                <div class="row g-4 mb-4"> 
+                    <div class="col-12">
+                        <div class="card  shadow-sm p-4"> 
+                            <div class="card-body">
+                                <form method="POST" action="#" >
+                                <div class="row">
+                
+                                    <div class="col-3"> 
+                                        <select id="role" name="role" class="form-control">
+                                            <option value="">Role</option>
+                                            <option value="admin">Admin</option>
+                                            <option value="driver">Driver</option>
+                                        </select> 
                                 </div>
-                <!-- container-fluid -->
-            </div>
+                
+                                <div class="col-3"> 
+                                    <input  class="form-control datepicker" id="creation_date" name="creation_date" placeholder="Creation Date">
+                                </div>
+                
+                                    <div class="col-4"> 
+                                        <input type="text" class="form-control" id="name_email" name="name_email" placeholder="Name / Email / Mobile No.">
+                                    </div> 
+                                    
+                
+                                    <div class="col-2">
+                                        <button type="submit" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Filter">
+                                          <i class="fas fa-filter"></i> </button>
+                
+                                        <a href="#" class="btn btn-success"  data-bs-toggle="tooltip" data-bs-placement="top" title="Reset">
+                                        <i class="mdi mdi-autorenew  "></i> </a>
+                
+                                    </div>  
+                                </div>
+                            </form>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="card card-orders-table shadow-sm mb-5">
+                    <div class="">
+                        <div class="table-responsive">
+                            <table class="reporttable table table-hover mb-0 text-left">
+                                <thead class="bg-soft bg-danger text-nowrap text-center">
+                                    <tr>
+                                        <th class="cell">S.No</th>
+                                        <th class="cell">Emp. ID</th>
+                                        <th class="cell">Employee Name</th>
+                                        <th class="cell">Creation Date</th>
+                                        <th class="cell">Role</th>
+                                        <th class="cell">Position</th>
+                                        <th class="cell">Email ID</th>
+                                        <th class="cell">Mobile No.</th>
+                                        <th class="cell">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                                        <tr>
+                                        <td class="cell" align="center">1.</td>
+                                        <td class="cell" align="center"><a href="user_update.html" class="empid"> MDSTF0011 </a></td>
+                                        <td class="cell" align="center"> Jim Halpert </td>
+                                        <td class="cell text-nowrap" align="center">25-07-2023</td>
+                                        <td class="cell" align="center">Driver</td>
+                                        <td class="cell" align="center">Driver</td>
+                                        <td class="cell" align="center">jim@mdfoundations.com</td>
+                                        <td class="cell" align="center">324245577</td>
+                                        <td class="cell text-nowrap" align="center">
+                                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#userdetails"> 
+                                                <i class="fas fa-eye"></i></button>
+                                            <a href="user_update.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit" class="btn btn-success">
+                                                <i class="fas fa-edit"></i> </a>
+                                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" class="btn btn-primary" title="Delete" >
+                                                <i class="fas fa-trash"></i> </a>
+                                            <!-- Modal -->
+                <div class="modal fade" id="userdetails" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title  text-primary" id="exampleModalLabel">Jim Halpert Details</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        
+                           
+                             <table class="table ">
+                              <tbody>
+                                <tr>
+                                 <td><b>Name</b></td>
+                                 <td>Jim Halpert</td>
+                                 <td><b>Role</b></td>
+                                 <td>Driver</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Position</b></td>
+                                    <td>Driver</td>
+                                    <td><b>Gender</b></td>
+                                    <td>Male</td>
+                                   </tr>
+                                   <tr>
+                                    <td><b>D.O.B</b></td>
+                                    <td>17-11-1925</td>
+                                    <td><b>Company</b></td>
+                                    <td>M&amp;D foundations</td>
+                                   </tr>
+                                   <tr>
+                                    <td><b>Address</b></td>
+                                    <td>5 Graham Way</td>
+                                    <td><b>City</b></td>
+                                    <td>Ealing</td>
+                                   </tr>
+                                   <tr>
+                                    <td><b>Country</b></td>
+                                    <td>United Kingdom</td>
+                                    <td><b>Postcode</b></td>
+                                    <td>DN7 9KK</td>
+                                   </tr>
+                                   <tr>
+                                    <td><b>Email</b></td>
+                                    <td>jim@mdfoundations.com</td>
+                                    <td><b>Mobile</b></td>
+                                    <td>324245577</td>
+                                   </tr>
+                                   <tr>
+                                    <td><b>License</b></td>
+                                    <td colspan="3">                        <img src="assets/images/directory-bg.jpg" style="max-width: 150px; max-height:150px;">
+                                                           </td>
+                                   </tr>
+                                    
+                              </tbody> 
+                             </table>
+                
+                 
+                
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>                       </td>
+                                    </tr>
+                                                        <tr>
+                                        <td class="cell" align="center">2.</td>
+                                        <td class="cell" align="center"><a href="user_update.html" class="empid"> MDSTF0010 </a></td>
+                                        <td class="cell" align="center"> Ross </td>
+                                        <td class="cell text-nowrap" align="center">24-07-2023</td>
+                                        <td class="cell" align="center">Driver</td>
+                                        <td class="cell" align="center">Driver</td>
+                                        <td class="cell" align="center">ross@mdfoundations.com</td>
+                                        <td class="cell" align="center">8797294223</td>
+                                        <td class="cell text-nowrap" align="center">
+                                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#userdetails"> 
+                                                <i class="fas fa-eye"></i></button>
+                                            <a href="user_update.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit" class="btn btn-success">
+                                                <i class="fas fa-edit"></i> </a>
+                                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" class="btn btn-primary" title="Delete" >
+                                                <i class="fas fa-trash"></i> </a> 
+                                </td>
+                                    </tr>
+                                 
+                                      
+                                    
+                                     
+                                </tbody>
 
+                            </table>
+                            <div class="modal fade" id="userdetails" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title  text-primary" id="exampleModalLabel">Jim Halpert Details</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    
+                                       
+                                         <table class="table ">
+                                          <tbody>
+                                            <tr>
+                                             <td><b>Name</b></td>
+                                             <td>Jim Halpert</td>
+                                             <td><b>Role</b></td>
+                                             <td>Driver</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Position</b></td>
+                                                <td>Driver</td>
+                                                <td><b>Gender</b></td>
+                                                <td>Male</td>
+                                               </tr>
+                                               <tr>
+                                                <td><b>D.O.B</b></td>
+                                                <td>17-11-1925</td>
+                                                <td><b>Company</b></td>
+                                                <td>M&amp;D foundations</td>
+                                               </tr>
+                                               <tr>
+                                                <td><b>Address</b></td>
+                                                <td>5 Graham Way</td>
+                                                <td><b>City</b></td>
+                                                <td>Ealing</td>
+                                               </tr>
+                                               <tr>
+                                                <td><b>Country</b></td>
+                                                <td>United Kingdom</td>
+                                                <td><b>Postcode</b></td>
+                                                <td>DN7 9KK</td>
+                                               </tr>
+                                               <tr>
+                                                <td><b>Email</b></td>
+                                                <td>jim@mdfoundations.com</td>
+                                                <td><b>Mobile</b></td>
+                                                <td>324245577</td>
+                                               </tr>
+                                               <tr>
+                                                <td><b>License</b></td>
+                                                <td colspan="3">                        <img src="assets/images/directory-bg.jpg" style="max-width: 150px; max-height:150px;">
+                                                                       </td>
+                                               </tr>
+                                                
+                                          </tbody> 
+                                         </table>
+                            
+                             
+                            
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                              </div>  
+                        </div><!--//table-responsive-->
+                
+                        
+                       
+                    </div><!--//card-body-->		
+                </div>
+                
+                
+                <div class="row"> 
+                    <div class="col-12"></div> 
+                </div>
+                
+                                
+                            </div>
+          <!-- container-fluid -->
         </div>
-        <!-- end main content-->
-
+        <!-- End Page-content -->
+      </div>
+      <!-- end main content-->
     </div>
     <!-- END layout-wrapper -->
 
     <!-- Right Sidebar -->
     <div class="right-bar">
-        <div data-simplebar class="h-100">
+      <div data-simplebar class="h-100">
+        <div class="rightbar-title d-flex align-items-center px-3 py-4">
+          <h5 class="m-0 me-2">Settings</h5>
 
-            <div class="rightbar-title d-flex align-items-center px-3 py-4">
+          <a href="javascript:void(0);" class="right-bar-toggle ms-auto">
+            <i class="mdi mdi-close noti-icon"></i>
+          </a>
+        </div>
 
-                <h5 class="m-0 me-2">Settings</h5>
+        <!-- Settings -->
+        <hr class="mt-0" />
 
-                <a href="javascript:void(0);" class="right-bar-toggle ms-auto">
-                    <i class="mdi mdi-close noti-icon"></i>
-                </a>
-            </div>
+        <div class="px-4 py-2">
+          <h6 class="mb-3">Select Custome Colors</h6>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input theme-color"
+              type="radio"
+              name="theme-mode"
+              id="theme-default"
+              value="default"
+              onchange="document.documentElement.setAttribute('data-theme-mode', 'default')"
+              checked />
+            <label class="form-check-label" for="theme-default">Default</label>
+          </div>
 
-            <!-- Settings -->
-            <hr class="mt-0" />
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input theme-color"
+              type="radio"
+              name="theme-mode"
+              id="theme-red"
+              value="red"
+              onchange="document.documentElement.setAttribute('data-theme-mode', 'red')" />
+            <label class="form-check-label" for="theme-red">Red</label>
+          </div>
 
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input theme-color"
+              type="radio"
+              name="theme-mode"
+              id="theme-teal"
+              value="teal"
+              onchange="document.documentElement.setAttribute('data-theme-mode', 'teal')" />
+            <label class="form-check-label" for="theme-teal">Teal</label>
+          </div>
+        </div>
 
-            <div class="px-4 py-2">
-                <h6 class="mb-3">Select Custome Colors</h6>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input theme-color" type="radio" name="theme-mode" id="theme-default"
-                        value="default" onchange="document.documentElement.setAttribute('data-theme-mode', 'default')"
-                        checked>
-                    <label class="form-check-label" for="theme-default">Default</label>
-                </div>
+        <h6 class="text-center mb-0 mt-3">Choose Layouts</h6>
 
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input theme-color" type="radio" name="theme-mode" id="theme-red"
-                        value="red" onchange="document.documentElement.setAttribute('data-theme-mode', 'red')">
-                    <label class="form-check-label" for="theme-red">Red</label>
-                </div>
+        <div class="p-4">
+          <div class="mb-2">
+            <img
+              src="assets/images/layouts/layout-1.jpg"
+              class="img-thumbnail"
+              alt="" />
+          </div>
+          <div class="form-check form-switch mb-3">
+            <input
+              type="checkbox"
+              class="form-check-input theme-choice"
+              id="light-mode-switch"
+              checked />
+            <label class="form-check-label" for="light-mode-switch"
+              >Light Mode</label
+            >
+          </div>
 
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input theme-color" type="radio" name="theme-mode" id="theme-teal"
-                        value="teal" onchange="document.documentElement.setAttribute('data-theme-mode', 'teal')">
-                    <label class="form-check-label" for="theme-teal">Teal</label>
-                </div>
-            </div>
+          <div class="mb-2">
+            <img
+              src="assets/images/layouts/layout-2.jpg"
+              class="img-thumbnail"
+              alt="" />
+          </div>
+          <div class="form-check form-switch mb-3">
+            <input
+              type="checkbox"
+              class="form-check-input theme-choice"
+              id="dark-mode-switch"
+              data-bsStyle="assets/css/bootstrap-dark.min.css"
+              data-appStyle="assets/css/dark.min.html" />
+            <label class="form-check-label" for="dark-mode-switch"
+              >Dark Mode</label
+            >
+          </div>
 
-
-            <h6 class="text-center mb-0 mt-3">Choose Layouts</h6>
-
-            <div class="p-4">
-                <div class="mb-2">
-                    <img src="assets/images/layouts/layout-1.jpg" class="img-thumbnail" alt="">
-                </div>
-                <div class="form-check form-switch mb-3">
-                    <input type="checkbox" class="form-check-input theme-choice" id="light-mode-switch" checked />
-                    <label class="form-check-label" for="light-mode-switch">Light Mode</label>
-                </div>
-
-                <div class="mb-2">
-                    <img src="assets/images/layouts/layout-2.jpg" class="img-thumbnail" alt="">
-                </div>
-                <div class="form-check form-switch mb-3">
-                    <input type="checkbox" class="form-check-input theme-choice" id="dark-mode-switch"
-                        data-bsStyle="assets/css/bootstrap-dark.min.css" data-appStyle="assets/css/dark.min.html" />
-                    <label class="form-check-label" for="dark-mode-switch">Dark Mode</label>
-                </div>
-
-                <div class="mb-2">
-                    <img src="assets/images/layouts/layout-3.jpg" class="img-thumbnail" alt="">
-                </div>
-                <div class="form-check form-switch mb-5">
-                    <input type="checkbox" class="form-check-input theme-choice" id="rtl-mode-switch"
-                        data-appStyle="assets/css/rtl.min.css" />
-                    <label class="form-check-label" for="rtl-mode-switch">RTL Mode</label>
-                </div>
-
-
-            </div>
-
-        </div> <!-- end slimscroll-menu-->
+          <div class="mb-2">
+            <img
+              src="assets/images/layouts/layout-3.jpg"
+              class="img-thumbnail"
+              alt="" />
+          </div>
+          <div class="form-check form-switch mb-5">
+            <input
+              type="checkbox"
+              class="form-check-input theme-choice"
+              id="rtl-mode-switch"
+              data-appStyle="assets/css/rtl.min.css" />
+            <label class="form-check-label" for="rtl-mode-switch"
+              >RTL Mode</label
+            >
+          </div>
+        </div>
+      </div>
+      <!-- end slimscroll-menu-->
     </div>
     <!-- /Right-bar -->
 
@@ -669,7 +850,10 @@
     <!-- JAVASCRIPT -->
     <script src="assets/libs/jquery/jquery.min.js"></script>
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+    
+    <script src="assets/js/pages/popper.min.js"></script>
+    <script src="assets/js/pages/bootstrap.min.js"></script>
+     <script src="assets/libs/metismenu/metisMenu.min.js"></script>
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
     <script src="assets/libs/node-waves/waves.min.js"></script>
     <script src="assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
@@ -679,12 +863,11 @@
     <script src="assets/libs/raphael/raphael.min.js"></script>
 
     <script src="assets/js/pages/dashboard.init.js"></script>
+  <script src="assets/js/pages/select2.js"></script>
+  <script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
 
     <script src="assets/js/app.js"></script>
-
-</body>
-
-
-<!-- Mirrored from themesbrand.com/lexa/layouts/index-red.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jul 2023 07:13:23 GMT -->
+    
+  </body>
 
 </html>
