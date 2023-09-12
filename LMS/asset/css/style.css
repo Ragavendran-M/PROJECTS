@@ -306,8 +306,8 @@ a.nav-link.active{
 .vertical-button {
   transform: rotate(-90deg);
   position: absolute;
-  left: -20.3%;
-  top: -28%;
+  left: -20%;
+  top: -20%;
 }
 .vertical-button a {
   text-decoration: none;
@@ -344,7 +344,7 @@ a.nav-link.active{
 .exp-img-2 {
   position: absolute;
   right: 22%;
-  top: 75%;
+  top: 60%;
   z-index: -1;
   width: 300px;
 }
@@ -415,6 +415,7 @@ section {
   padding: 10px;
   border-radius: 6px;
   background-color: #0e1015;
+  height: 100% !important;
 }
 .card:hover .img {
   transition: all 0.5s ease;
@@ -773,6 +774,10 @@ position: relative;
   position: absolute;
   right: 5%;
   top: 10%;
+}
+.offer .card p {
+  text-align: justify;
+  font-size:12px ;
 }
 
 .box{
