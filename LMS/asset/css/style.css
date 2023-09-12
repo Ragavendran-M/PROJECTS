@@ -19,7 +19,7 @@
 
 body {
   font-family: "Jost", sans-serif;
-  overflow-x:hidden ;
+  /* overflow-x:hidden ; */
   scroll-behavior: smooth;
 }
 .black-bg{
@@ -774,12 +774,7 @@ position: relative;
   right: 5%;
   top: 10%;
 }
-.swiper1{
-  width: 100% !important;
-}
-.body{
-  width: 100% !important;
-}
+
 .box{
   border: 1px solid #FFFFFF;
 
@@ -816,3 +811,5 @@ position: relative;
       }
 
     }
+   
+    

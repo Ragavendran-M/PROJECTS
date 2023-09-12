@@ -31,21 +31,26 @@ const swiper = new Swiper('.swiper', {
     }
   })
 const swiper1 = new Swiper('.swiper1', {
-    // Default parameters
-    slidesPerView: 1,
+
+    slidesPerView: "auto",
     spaceBetween: 200,
     autoplay:{
         delay:3500,
    
     },
 
-    // pagination: {
-    //   el: ".swiper-pagination",
-    //   clickable: true,
-    // },
+
   });
     
-
+  var owl = $('.owl-carousel');
+  owl.owlCarousel({
+      items:1,
+      loop:true,
+    
+      autoplay:true,
+      autoplayTimeout:3000,
+      // autoplayHoverPause:true
+  });
 
   $(document).ready(function(){
   $(".counter").counterUp({
