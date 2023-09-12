@@ -46,7 +46,7 @@ const swiper1 = new Swiper('.swiper1', {
   owl.owlCarousel({
       items:1,
       loop:true,
-    
+      margin:5,
       autoplay:true,
       autoplayTimeout:3000,
       // autoplayHoverPause:true

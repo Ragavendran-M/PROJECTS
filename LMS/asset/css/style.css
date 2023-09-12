@@ -786,7 +786,15 @@ position: relative;
       .blog-card-container{
         margin-top: 310px;
       }
-      
+      footer small{
+        font-size: 10px !important;
+      }
+      .ps-100{
+        padding-left: 10px;
+      }
+      .blog .pt-250{
+        padding-top: 50px;
+      }
     }
     @media (min-width:420px) and (max-width:800px){
       .connector{
@@ -795,6 +803,10 @@ position: relative;
       .blog-card-container{
         margin-top: 360px;
       }
+      .course li{
+        font-size: 10px;
+      }
+  
     }
     @media (min-width:1400px) {
       .connector{
