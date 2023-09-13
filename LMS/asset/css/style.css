@@ -307,7 +307,7 @@ a.nav-link.active{
   transform: rotate(-90deg);
   position: absolute;
   left: -20%;
-  top: -20%;
+  top: -18%;
 }
 .vertical-button a {
   text-decoration: none;
@@ -344,7 +344,7 @@ a.nav-link.active{
 .exp-img-2 {
   position: absolute;
   right: 22%;
-  top: 60%;
+  top: 52%;
   z-index: -1;
   width: 300px;
 }
@@ -801,7 +801,7 @@ position: relative;
         padding-top: 50px;
       }
     }
-    @media (min-width:420px) and (max-width:800px){
+    @media (min-width:420px) and (max-width:640px){
       .connector{
         left: 9%;
       }
@@ -813,12 +813,8 @@ position: relative;
       }
   
     }
-    @media (min-width:1400px) {
-      .connector{
-        left: 5%;
-      }
-    }
-    @media screen and (min-width:769px){
+   
+    @media  (min-width:641px) and (max-width:991px) {
       .dropend:hover > .dropdown-menu {
 
         position: absolute;
@@ -826,7 +822,25 @@ position: relative;
         left: 100%;
         margin-left: .125em;
       }
+      .connector{
+        left: 7%;
+      }
+      .blog-card-container img {
+        top:-84%;
+      }
+      .pt-md-220{
+        padding-top: 220px;
+      }
+      .ps-100{
+        padding-left: 20px;
+      }
+   
 
+    }
+    @media (min-width:1400px) {
+      .connector{
+        left: 5%;
+      }
     }
    
     
